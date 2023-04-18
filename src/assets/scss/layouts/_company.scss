@@ -1,0 +1,103 @@
+.company{
+  margin-bottom: toRem(29.29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .company-text{
+    margin-top: toRem(84.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: toRem(64);
+
+
+    .company-text-tittle{
+      letter-spacing: -0.01em;
+      color: #0B0A0F;
+      margin-bottom: toRem(24);
+      width: toRem(742);
+      span:first-child{
+        color: #0FBFE5;
+      }
+      
+      @media (max-width : 480px){
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .company-text-subtittle{
+      width: toRem(632);
+      font-weight: 500;
+      color: #394150;      
+
+      @media(max-width:480px){
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+
+  .company-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .company-content{
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width : 480px) {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .company-content-left{
+        display: relative;
+        img{
+          position: relative;
+          right: toRem(40);
+          @media (max-width : 480px){
+            width: 100%;
+            right: toRem(0);
+          }
+        }
+      }
+      .company-content-right{
+        display: block;
+        width: 42.986%;
+        padding-top: toRem(105);
+        
+        @media (max-width : 480px){
+          padding-top: toRem(0);
+          width: 100%;
+          text-align: center;
+          display: contents;
+        }
+        .company-content-right1{
+          width: 100%;
+          font-weight: 700;
+          color: #0B0A0F;
+
+          @media (max-width : 480px){
+            display: contents;
+          }
+        }
+        .company-content-right2{
+          margin-top: toRem(16);
+          width: 100%;
+          font-weight: 500;
+          color: #394150;
+          margin-bottom: toRem(48);
+        }
+        .company-content-right3{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

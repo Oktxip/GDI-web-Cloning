@@ -1,0 +1,100 @@
+.insight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: toRem(0);
+  position: relative;
+  padding-top: toRem(144);
+  padding-bottom: toRem(88);
+  justify-content: center;
+
+  .container{
+    padding: 0rem toRem(40) !important;
+  }
+
+  .insight-text{
+    padding-bottom: toRem(56);
+    display: flex;
+    justify-content: center;
+    .insight-text-tittle{
+      width: toRem(899);
+      font-weight: 800;
+      text-align: center;
+      letter-spacing: -0.01em;
+      color: #0B0A0F;
+      
+      @media(max-width : 480px){
+        width: auto;
+      }
+
+      span{
+        color: #0FBFE5;
+      }
+    }
+  }
+
+
+  .insight-c{
+    padding-bottom: toRem(56);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: toRem(30);
+    
+    @media(max-width: 480px){
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: toRem(30);
+      align-items: center;
+      padding: 0rem toRem(20);
+    }
+
+    .insight-card{
+      padding: toRem(50) toRem(50) toRem(0) toRem(50);
+      background-color: #F6F7FB;
+      
+      @media(max-width : 480px){
+        padding: toRem(20) toRem(20) toRem(0) toRem(20);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .insight-card-tittle{
+        width: toRem(466);
+        font-weight: 700;
+        color: #0B0A0F;
+        @media(max-width : 480px){
+          width: auto;
+        }
+      }
+      li{
+        list-style-type: none;
+        width: toRem(466);
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: toRem(28);
+        color: #394150;
+        margin: toRem(24) 0rem;
+        display: flex;
+        align-items: center;
+        @media(max-width : 480px){
+          width: auto;
+        }
+        img{
+          margin-top: 0rem !important;
+          margin-right: toRem(16);
+        }
+      }
+      img{
+        margin-top: toRem(32);
+      }
+    }
+  }
+  .insight-btn{
+    margin-top: toRem(24);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+} 

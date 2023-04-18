@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  overflow-x: hidden;
+}
+
+.container{
+  @media (max-width : 480px){
+    --bs-gutter-x: 1.25rem !important;
+  }
+}

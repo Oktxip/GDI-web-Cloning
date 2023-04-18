@@ -1,0 +1,48 @@
+.w-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: toRem(16) toRem(32);
+  gap: toRem(10);
+
+  width: toRem(184);
+  height: toRem(56);
+
+  /* White */
+
+  background: $white;
+  box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
+  border-radius: toRem(10);
+}
+.b-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: toRem(16) toRem(32);
+  width: toRem(184);
+  height: toRem(56);
+
+  /* blue */
+
+  background: #2979D7;
+  color: $white;
+  box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
+  border-radius: toRem(10);
+  font-weight: 700;
+  font-size: toRem(18);
+  line-height: toRem(24);
+}
+
+.wd-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: toRem(16) toRem(32);
+  gap: toRem(10);
+  width: toRem(184);
+  height: toRem(56);
+  color: $white;
+}

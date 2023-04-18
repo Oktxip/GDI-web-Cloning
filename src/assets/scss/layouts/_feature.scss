@@ -1,0 +1,214 @@
+.feature{
+  clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+  padding-top: toRem(228);
+  padding-bottom: toRem(106);
+  background-color: #00326D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+  @media (max-width: 480px) {
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: toRem(60);
+  }
+  
+  .rectangel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .feature-ttl{
+    width: toRem(931);
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-bottom: toRem(48);
+
+    @media (max-width: 480px) {
+      width: 100%;
+      width: 95%;
+    }
+  }
+
+
+  .feature-ctn{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: toRem(16);
+    align-items: center;
+    grid-template-areas: "butt butt""con con";
+    @media (max-width: 480px) {
+      grid-gap: toRem(0);
+      padding-top: toRem(16);
+      grid-template-areas: "con con""butt butt";
+      width: 95%;
+    }
+    
+    .button-con{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      grid-area: butt;
+      @media (max-width: 480px) {
+        margin-top: toRem(32);
+        padding-bottom: toRem(0) !important;
+      }
+
+      .button-container {
+        display: flex;
+        flex-wrap : wrap; /* menambahkan flex-wrap */
+        justify-content: center;
+        margin-bottom: toRem(64);
+        border-radius: toRem(100);
+        background: rgba(255, 255, 255, 0.1);
+        padding: toRem(6) 0rem;
+        
+        @media (max-width: 480px) {
+          padding: toRem(6) !important;
+          background-color: transparent !important;
+        }
+  
+        button {
+          border: none;
+          background-color: transparent;
+          color: #666;
+          margin: 0rem toRem(6);
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: toRem(12) toRem(16);
+          gap: toRem(6);
+          width: toRem(250);
+          height: toRem(52);
+          border-radius: toRem(200);
+          text-align: center; /* menambahkan text-align */
+          
+          
+          @media (max-width:480px){
+            font-size: 0;
+            width: toRem(10);
+            height: toRem(10);
+            border-radius: 50%;
+            margin: 0rem toRem(5) 0rem 0rem !important;
+            background-color: #eee;
+            border: none;
+            padding: 0;
+          }
+  
+          span {
+            font-weight: 700;
+            font-size: toRem(18);
+            line-height: toRem(24);
+            color: #ffff;
+          }
+  
+            .mh{
+              @media (max-width: 480px) {
+                display: none !important;
+              }
+            }
+        }
+  
+        .button-container button:last-child {
+          @media (max-width: 480px) {
+            margin-right: 0;
+          }
+        }
+  
+        button.on {
+          background-color: #2979D7;
+          color: #ffff;
+          transition: all 1s;
+  
+          @media (max-width: 480px) {
+            background-color: #007bff;
+          }
+        }
+      }
+    }
+  }
+
+  .ctn {
+    display: none;
+    text-align: center;
+    transition: all 1s;
+    grid-area: con;
+  }
+  .ctn-container .ctn.on {
+    display: flex;
+    transition: all 1s;
+    flex-direction: row-reverse;
+    align-items: center;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+  }    
+  .ctn-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: 480px) {
+      width: 95%;
+    }
+    
+    .ctn-right-lo{
+      margin-bottom: toRem(30);
+      display: flex;
+      text-align: left;
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    .ctn-right-ti{
+      width: toRem(474);
+      font-weight: 700;
+      color: $white;
+      display: flex;
+      text-align: left;
+      
+      @media (max-width: 480px) {
+        width: 100%;
+        font-size: toRem(24);
+        text-align: center;
+      }
+    }
+
+    .ctn-right-li{
+      margin-top: toRem(12);
+      font-weight: 400;
+      font-size: toRem(18);
+      line-height: toRem(28);
+      color: #E5E6EB;
+      list-style: none;
+      li{
+        padding: toRem(12) 0rem;
+        display: flex;
+        text-align: left;
+        img{
+          padding-right: toRem(22);
+        }
+      }
+    }
+  }
+  .ctn-left{
+    margin-left: toRem(48);
+    
+    img{
+      @media (max-width: 480px) {
+        margin-left: toRem(0);
+        width: 100%;
+      }
+    }
+    @media (max-width: 480px) {
+      margin: toRem(0);
+      width: 100%;
+    }
+  }
+}

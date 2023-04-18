@@ -1,0 +1,182 @@
+.pricing{
+  padding-top: toRem(96);
+  padding-bottom: toRem(96);
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .b-btn{
+    width: 100% !important;
+  }
+  .w-btn{
+    width: 100% !important;
+  }
+
+  .pricing-tittle{
+    width: toRem(674);
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #0B0A0F;
+    margin-bottom: toRem(60);
+    
+    @media (max-width: 480px){
+      width: 100%;
+    }
+  }
+
+  .pricing-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: toRem(30);
+    
+    @media (max-width: 480px){
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-card-w{
+      border: 1px solid #E5E6EB;
+      padding: toRem(48) toRem(32) toRem(32) toRem(32);
+      width: toRem(367);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      .pricing-card-w-top{
+        list-style-type: none;
+  
+        .pricing-card-w-top-head{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          padding-bottom: toRem(28);
+          border-bottom: 1px solid #E5E6EB;
+  
+          .pricing-card-w-top-head-tittle{
+            margin-bottom: toRem(16);
+            font-style: normal;
+            font-weight: 700;
+            font-size: toRem(28);
+            line-height: toRem(42);
+            color: #0B0A0F;
+          }
+          .pricing-card-w-top-head-price{
+            font-style: normal;
+            font-weight: 800;
+            font-size: toRem(48);
+            line-height: toRem(64);
+            letter-spacing: -0.01em;
+            color: #0B0A0F;
+            span{
+              padding-left: toRem(8);
+              font-style: normal;
+              font-weight: 400;
+              font-size: toRem(18);
+              line-height: toRem(28);
+              color: #9EA3AE;
+            }
+          }
+        }
+        
+        .pricing-card-w-top-check{
+          padding-left: toRem(6);
+          margin-top: toRem(22);
+          margin-bottom: toRem(24);
+          li{
+            padding: toRem(8) toRem(0);
+            display: flex;
+          }
+          img{
+            margin-right: toRem(22);
+          }
+        }
+        
+        .pricing-card-w-btn{
+          width: 100%;
+        }
+      }
+    }
+    
+    
+    .pricing-card-b{
+      padding: toRem(48) toRem(32) toRem(32) toRem(32);
+      background-color: #00326D;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+
+      .recom{
+        position: absolute;
+        top: toRem(16);
+        right: toRem(16);
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: toRem(20);
+        color: $white;
+        padding: toRem(6) toRem(10);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: toRem(5);
+      }
+
+      .pricing-card-b-top{
+        list-style-type: none;
+  
+        .pricing-card-b-top-head{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          padding-bottom: toRem(28);
+          border-bottom: 1px solid #F4F4F6;
+  
+          .pricing-card-b-top-head-tittle{
+            margin-bottom: toRem(16);
+            font-style: normal;
+            font-weight: 700;
+            font-size: toRem(28);
+            line-height: toRem(42);
+            color: $white;
+          }
+          .pricing-card-b-top-head-price{
+            font-style: normal;
+            font-weight: 800;
+            font-size: toRem(48);
+            line-height: toRem(64);
+            letter-spacing: -0.01em;
+            color: $white;
+            span{
+              padding-left: toRem(8);
+              font-style: normal;
+              font-weight: 400;
+              font-size: toRem(18);
+              line-height: toRem(28);
+              color: #F4F4F6;
+            }
+          }
+        }
+        
+        .pricing-card-b-top-check{
+          padding-left: toRem(6);
+          margin-top: toRem(22);
+          margin-bottom: toRem(24);
+          li{
+            padding: toRem(8) toRem(0);
+            display: flex;
+          }
+          img{
+            margin-right: toRem(22);
+          }
+        }
+        
+        .pricing-card-b-btn{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
