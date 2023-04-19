@@ -51,5 +51,59 @@ hamburgerIcon.addEventListener('click', () => {
     onButton.classList.add("on");
   }
 
+// slider cs --------------------------------------------------------------------
 
+const carousel = document.querySelector('.carousel');
+const carouselContainer = document.querySelector('.carousel-container');
+const carouselItems = document.querySelectorAll('.carousel-item');
+const carouselBullets = document.querySelector('.carousel-bullets');
 
+// Initialize variables
+let currentSlide = 0;
+let intervalId;
+
+// Create bullets
+carouselItems.forEach((item, index) => {
+  const bullet = document.createElement('button');
+  bullet.classList.add('bullet');
+  if (index === 0) {
+    bullet.classList.add('active');
+  }
+  bullet.addEventListener('click', () => {
+    clearInterval(intervalId);
+    goToSlide(index);
+  });
+  carouselBullets.appendChild(bullet);
+});
+
+// Go to a specific slide
+function goToSlide(slideIndex) {
+  carouselItems[currentSlide].classList.remove('active');
+  carouselBullets.childNodes[currentSlide].classList.remove('active');
+  carouselItems[slideIndex].classList.add('active');
+  carouselBullets.childNodes[slideIndex].classList.add('active');
+  currentSlide = slideIndex;
+}
+
+// Next slide
+function nextSlide() {
+  clearInterval(intervalId);
+  const nextSlideIndex = currentSlide + 1 >= carouselItems.length ? 0 : currentSlide + 1;
+  goToSlide(nextSlideIndex);
+}
+
+// Previous slide
+function prevSlide() {
+  clearInterval(intervalId);
+  const prevSlideIndex = currentSlide - 1 < 0 ? carouselItems.length - 1 : currentSlide - 1;
+  goToSlide(prevSlideIndex);
+}
+
+// Set interval for auto slide
+intervalId = setInterval(() => {
+  nextSlide();
+}, 5000);
+
+// Event listeners for arrow buttons
+document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
+document.querySelector('.carousel-next').addEventListener('click', nextSlide);

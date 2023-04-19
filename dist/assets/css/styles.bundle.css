@@ -15431,7 +15431,113 @@ footer .footer-end .cr .cr-media .cr-media--wrapper img {
   z-index: -1;
 }
 .review .review-cs {
-  padding: 3.125rem;
+  transition: all 2s;
+}
+.review .review-cs .carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+.review .review-cs .carousel .carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  -webkit-scroll-snap-type: x mandatory;
+  justify-content: center;
+  width: 1044px;
+}
+.review .review-cs .carousel .carousel-container .carousel-item {
+  flex-shrink: 0;
+  width: 80%;
+  margin-right: 1rem;
+  scroll-snap-align: center;
+  -webkit-scroll-snap-align: center;
+  display: none;
+  transition: opacity 0.5s ease;
+}
+.review .review-cs .carousel .carousel-container .carousel-item.active {
+  display: block;
+}
+.review .review-cs .review {
+  padding: 3rem;
+  border: 1px solid #E5E6EB;
+  background: #FFFFFF;
+  height: 22.5rem;
+}
+.review .review-cs .review .review-text {
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #0B0A0F;
+}
+.review .review-cs .review .review-user {
+  display: flex;
+  align-items: center;
+}
+.review .review-cs .review .review-user .review-user-photo img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.review .review-cs .review .review-user .review-user-information-username {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #0B0A0F;
+}
+.review .review-cs .review .review-user .review-user-information-work {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #9EA3AE;
+}
+.review .review-cs .carousel-bullets {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.review .review-cs .carousel-bullets .bullet {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+  background: #C1DDFE;
+  cursor: pointer;
+  border: none;
+}
+.review .review-cs .carousel-bullets .bullet.active {
+  background: #2979D7;
+}
+.review .review-cs .carousel-prev,
+.review .review-cs .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2979D7;
+  width: 3.625rem;
+  border-radius: 50%;
+  border: none;
+  color: #333;
+  padding: 0.838rem;
+  cursor: pointer;
+}
+.review .review-cs .carousel-prev {
+  left: 0;
+}
+.review .review-cs .carousel-next {
+  right: 0;
 }
 
 .pricing {
@@ -15618,7 +15724,7 @@ footer .footer-end .cr .cr-media .cr-media--wrapper img {
   }
 }
 .cta .cta-bg-2 {
-  top: 2.8125rem;
+  bottom: 0rem;
   position: absolute;
   right: 0;
 }

@@ -53,6 +53,128 @@
 
 
   .review-cs{
-    padding: toRem(50);
+    transition: all 2s;
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 1044px;
+      margin: 0 auto;
+      .carousel-container {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        -webkit-scroll-snap-type: x mandatory;
+        justify-content: center;
+        width: 1044px;
+        .carousel-item {
+          flex-shrink: 0;
+          width: 80%;
+          margin-right: 1rem;
+          scroll-snap-align: center;
+          -webkit-scroll-snap-align: center;
+          display: none;
+          transition: opacity 0.5s ease;
+        }
+        
+        .carousel-item.active {
+          display: block;
+        }
+      }
+    }
+    
+    
+    .review {
+      padding: toRem(48);
+      border: 1px solid #E5E6EB;
+      background: $white;
+      height: toRem(360);
+
+      .review-text {
+        font-family: 'Eudoxus Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: toRem(24);
+        line-height: toRem(40);
+        margin-bottom: toRem(40);
+        color: #0B0A0F;
+
+      }
+      .review-user {
+        display: flex;
+        align-items: center;
+        
+        .review-user-photo img {
+          width: toRem(64);
+          height: toRem(64);
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+        
+        .review-user-information-username {
+          font-style: normal;
+          font-weight: 700;
+          font-size: toRem(24);
+          line-height: toRem(32);
+          color: #0B0A0F;
+        }
+        
+        .review-user-information-work {
+          font-style: normal;
+          font-weight: 500;
+          font-size: toRem(18);
+          line-height: toRem(28);
+          color: #9EA3AE;
+        }
+      }
+    }
+    
+    
+    .carousel-bullets {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      .bullet {
+        width: toRem(10);
+        height: toRem(10);
+        border-radius: 50%;
+        padding: toRem(5);
+        background: #C1DDFE;
+        cursor: pointer;
+        border: none;
+      }
+      
+      .bullet.active {
+        background: #2979D7;
+      }
+    }
+    
+    
+    .carousel-prev,
+    .carousel-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #2979D7;
+      width: toRem(58);
+      border-radius: 50%;
+      border: none;
+      color: #333;
+      padding: 0.838rem;
+      cursor: pointer;
+    }
+    
+    .carousel-prev {
+      left: 0;
+    }
+    
+    .carousel-next {
+      right: 0;
+    }    
+    
   }
 }
