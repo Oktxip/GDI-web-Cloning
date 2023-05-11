@@ -34,12 +34,26 @@
   box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
   border-radius: toRem(10);
   font-weight: 700;
+  span{
+    background: radial-gradient(102.67% 244.68% at 101.15% 6.32%,#2ca3c9 0,#63b7a3 53.12%,#508be2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all linear .4s;
+  }
 }
 .gradient-btn:hover{
   color: transparent;
   background: radial-gradient(102.67% 244.68% at 101.15% 6.32%,#2ca3c9 0,#63b7a3 53.12%,#508be2 100%);
   border: 0.06rem solid $white;
   color: $white;
+}
+.gradient-btn:hover .efc-tsprnt-text{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $white;
+  background-clip: text;
+  color: $white;
+  transition: all linear .4s;
 }
 
 .b-btn{

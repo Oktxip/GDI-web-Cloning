@@ -21824,12 +21824,29 @@ textarea.form-control-lg {
   border-radius: 0.625rem;
   font-weight: 700;
 }
+.gradient-btn span {
+  background: radial-gradient(102.67% 244.68% at 101.15% 6.32%, #2ca3c9 0, #63b7a3 53.12%, #508be2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: all linear 0.4s;
+}
 
 .gradient-btn:hover {
   color: transparent;
   background: radial-gradient(102.67% 244.68% at 101.15% 6.32%, #2ca3c9 0, #63b7a3 53.12%, #508be2 100%);
   border: 0.06rem solid #FFFFFF;
   color: #FFFFFF;
+}
+
+.gradient-btn:hover .efc-tsprnt-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #FFFFFF;
+  background-clip: text;
+  text-fill-color: #FFFFFF;
+  color: #FFFFFF;
+  transition: all linear 0.4s;
 }
 
 .b-btn {
