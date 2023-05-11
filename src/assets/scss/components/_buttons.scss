@@ -1,4 +1,5 @@
 .w-btn{
+  transition: all linear .4s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,36 +12,16 @@
   box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
   border-radius: toRem(10);
   font-weight: 700;
-  animation: all linear 1s;
 }
 .w-btn:hover{
   color: transparent;
-  background: radial-gradient(102.67% 244.68% at 101.15% 6.32%,#2ca3c9 0,#63b7a3 53.12%,#508be2 100%);
+  background: transparent;
   border: 0.06rem solid $white;
   color: $white;
 }
 
-.b-btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: toRem(16) toRem(32);
-  width: toRem(184);
-  height: toRem(56);
-
-  /* blue */
-
-  background: #2979D7;
-  color: $white;
-  box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
-  border-radius: toRem(10);
-  font-weight: 700;
-  font-size: toRem(18);
-  line-height: toRem(24);
-}
-
-.wd-btn{
+.gradient-btn{
+  transition: all linear .4s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,5 +30,55 @@
   gap: toRem(10);
   width: toRem(184);
   height: toRem(56);
+  background: $white;
+  box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
+  border-radius: toRem(10);
+  font-weight: 700;
+}
+.gradient-btn:hover{
+  color: transparent;
+  background: radial-gradient(102.67% 244.68% at 101.15% 6.32%,#2ca3c9 0,#63b7a3 53.12%,#508be2 100%);
+  border: 0.06rem solid $white;
   color: $white;
+}
+
+.b-btn{
+  transition: all linear .4s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: toRem(16) toRem(32);
+  width: toRem(184);
+  height: toRem(56);
+  background: #2979D7;
+  color: $white;
+  box-shadow: toRem(8) toRem(18) toRem(60) rgba(0, 0, 0, 0.08);
+  border-radius: toRem(10);
+  font-weight: 700;
+  font-size: toRem(18);
+  line-height: toRem(24);
+}
+.b-btn:hover{
+  border: 1px solid #2979D7;
+  background: $white;
+  color: #2979D7;
+}
+
+.wd-btn{
+  transition: all linear .4s;
+  border-radius: toRem(10);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: toRem(16) toRem(32);
+  gap: toRem(10);
+  width: toRem(188);
+  height: toRem(56);
+  color: $white;
+}
+.wd-btn:hover{
+  background-color: #2979D7;
+  border: 0.06rem solid $white;
 }

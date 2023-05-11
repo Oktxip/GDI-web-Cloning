@@ -24,7 +24,7 @@
       letter-spacing: -0.01em;
       color: #0B0A0F;
       margin-bottom: toRem(24);
-      @media(max-width : 480px){
+      @include media-breakpoint-down(xs-3){
         width: auto;
       }
     }
@@ -37,7 +37,7 @@
       line-height: toRem(28);
       text-align: center;
       color: #394150;
-      @media(max-width : 480px){
+      @include media-breakpoint-down(xs-3){
         width: auto;
       }
     }
@@ -60,7 +60,7 @@
       width: 100%;
       margin: 0 auto;
       max-width: toRem(1044);
-      @media (max-width : 1200px){
+      @include media-breakpoint-down(xl){
         max-width: toRem(975);
       }
       .carousel-container {
@@ -72,7 +72,7 @@
         -webkit-scroll-snap-type: x mandatory;
         justify-content: center;
         width: toRem(1044);
-        @media (max-width : 1200px){
+        @include media-breakpoint-down(xl){
           width: toRem(975);
         }
         .carousel-item {

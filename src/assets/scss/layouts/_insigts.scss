@@ -23,7 +23,7 @@
       letter-spacing: -0.01em;
       color: #0B0A0F;
       
-      @media(max-width : 480px){
+      @include media-breakpoint-down(xs-3){
         width: auto;
       }
 
@@ -51,7 +51,7 @@
       padding: toRem(50) toRem(50) toRem(0) ;
       background-color: #F6F7FB;
       
-      @media(max-width : 480px){
+      @include media-breakpoint-down(xs-3){
         padding: toRem(20) toRem(20) toRem(0) ;
         display: flex;
         justify-content: center;
@@ -64,10 +64,10 @@
         width: toRem(466);
         font-weight: 700;
         color: #0B0A0F;
-        @media(max-width : 1200px){
+        @include media-breakpoint-down(xl){
           width: toRem(390);
         }
-        @media(max-width : 480px){
+        @include media-breakpoint-down(xs-3){
           width: auto;
         }
       }
@@ -81,10 +81,10 @@
         margin: toRem(24) 0rem;
         display: flex;
         align-items: center;
-        @media(max-width : 1200px){
+        @include media-breakpoint-down(xl){
           width: toRem(390);
         }
-        @media(max-width : 480px){
+        @include media-breakpoint-down(xs-3){
           width: auto;
         }
         img{
@@ -94,7 +94,7 @@
       }
       .card-img{
         margin-top: toRem(32);
-        @media(max-width : 1200px){
+        @include media-breakpoint-down(xl){
           width: toRem(390);
         }
       }

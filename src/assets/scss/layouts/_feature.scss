@@ -8,7 +8,7 @@
   align-items: center;
   position: relative;
   
-  @media (max-width: 480px) {
+  @include media-breakpoint-down(xs-3) {
     clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: toRem(60);
   }
@@ -27,7 +27,7 @@
     color: #fff;
     margin-bottom: toRem(48);
 
-    @media (max-width: 480px) {
+    @include media-breakpoint-down(xs-3) {
       width: 100%;
       width: 95%;
     }
@@ -40,7 +40,7 @@
     row-gap: toRem(16);
     align-items: center;
     grid-template-areas: "butt butt""con con";
-    @media (max-width: 480px) {
+    @include media-breakpoint-down(xs-3) {
       grid-gap: toRem(0);
       padding-top: toRem(16);
       grid-template-areas: "con con""butt butt";
@@ -52,21 +52,21 @@
       display: flex;
       justify-content: center;
       grid-area: butt;
-      @media (max-width: 480px) {
+      @include media-breakpoint-down(xs-3) {
         margin-top: toRem(32);
         padding-bottom: toRem(0) !important;
       }
 
       .button-container {
         display: flex;
-        flex-wrap : wrap; /* menambahkan flex-wrap */
+        flex-wrap : wrap; 
         justify-content: center;
         margin-bottom: toRem(64);
         border-radius: toRem(100);
         background: rgba(255, 255, 255, 0.1);
         padding: toRem(6) 0rem;
         
-        @media (max-width: 480px) {
+        @include media-breakpoint-down(xs-3) {
           padding: toRem(6) !important;
           background-color: transparent !important;
         }
@@ -107,15 +107,19 @@
             color: #ffff;
           }
   
-            .mh{
-              @media (max-width: 480px) {
-                display: none !important;
-              }
+          .mh{
+            @include media-breakpoint-down(xs-3) {
+              display: none !important;
             }
+          }
+        }
+        button:hover{
+          background-color: #297ad76c;
+          transition: all linear .4s;
         }
   
         .button-container button:last-child {
-          @media (max-width: 480px) {
+          @include media-breakpoint-down(xs-3) {
             margin-right: 0;
           }
         }
@@ -125,7 +129,7 @@
           color: #ffff;
           transition: all 1s;
   
-          @media (max-width: 480px) {
+          @include media-breakpoint-down(xs-3) {
             background-color: #007bff;
           }
         }
@@ -138,18 +142,19 @@
     text-align: center;
     transition: all 1s;
     grid-area: con;
+    min-height: toRem(510);
   }
   .ctn-container .ctn.on {
     display: flex;
     transition: all 1s;
     flex-direction: row-reverse;
     align-items: center;
-    @media (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       align-items: center;
       gap: 2rem;
       justify-content: center;
     }
-    @media (max-width: 480px) {
+    @include media-breakpoint-down(xs-3) {
       flex-direction: column;
     }
   }    
@@ -157,10 +162,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @media (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       width: 45%;
     }
-    @media (max-width: 480px) {
+    @include media-breakpoint-down(xs-3) {
       width: 95%;
     }
     
@@ -171,7 +176,7 @@
       @media (max-width: 1064px) {
         width: 20%;
       }
-      @media (max-width: 480px) {
+      @include media-breakpoint-down(xs-3) {
         display: none;
       }
 
@@ -189,7 +194,7 @@
       display: flex;
       text-align: left;
       
-      @media (max-width: 480px) {
+      @include media-breakpoint-down(xs-3) {
         width: 100%;
         font-size: toRem(24);
         text-align: center;
@@ -215,21 +220,21 @@
   }
   .ctn-left{
     margin-left: toRem(48);
-    @media (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       margin-left: toRem(0);
       width: 45%;
     }
-    @media (max-width: 480px) {
+    @include media-breakpoint-down(xs-3) {
       margin: toRem(0);
       width: 100%;
     }
     
     img{
-      @media (max-width: 480px) {
+      @include media-breakpoint-down(xs-3) {
         margin-left: toRem(0);
         width: 100%;
       }
-      @media (max-width: 1200px) {
+      @include media-breakpoint-down(xl) {
         width: 100%;
       }
     }

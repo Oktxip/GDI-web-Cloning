@@ -5,7 +5,7 @@
     justify-content: space-between;
     padding-bottom: toRem(81);
     
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       margin-top: toRem(55) !important;
       width: 100%;
       display: flex;
@@ -15,10 +15,10 @@
     .top-tier-left{
       width: toRem(388);
       
-      @media(max-width:1200px){
+      @include media-breakpoint-down(xl){
         width: toRem(356);
       }
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -38,7 +38,7 @@
       margin-top: toRem(15);
 
       
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -48,7 +48,7 @@
         color: #394150;
         padding-bottom: toRem(32);
 
-        @media(max-width:480px){
+        @include media-breakpoint-down(xs-3){
           text-align: center;
         }
       }
@@ -61,11 +61,11 @@
         z-index: 10;
         position: relative;
         
-        @media(max-width:1200px){
+        @include media-breakpoint-down(xl){
           row-gap: 20px;
           flex-wrap: wrap;
         }
-        @media(max-width:480px){
+        @include media-breakpoint-down(xs-3){
           display: none;
         }
       }
@@ -78,7 +78,7 @@
     padding-top: toRem(32);
     margin-bottom: toRem(81);
 
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       display: flex;
     }
 
@@ -95,7 +95,7 @@
       z-index: 10;
     }
     
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       flex-direction: column;
       gap: toRem(56);
       .a1{

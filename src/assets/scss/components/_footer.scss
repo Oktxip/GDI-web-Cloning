@@ -11,28 +11,21 @@ footer {
     font-size: toRem(16);
     padding: 0rem !important;
     
-    @media (max-width: 480px){
+    @include media-breakpoint-down(xs-3){
       grid-template-columns: repeat(2, 1fr);
       width: 91%;
       margin-bottom: toRem(162);
       grid-gap: toRem(15);
-      
-      ul:last-child{
-        position: absolute;
-        top: 26rem;
-        width: 151.5px;
-      }
-    }
-    @media (max-width: 360px){
-      ul:last-child{
-        top: 31rem;
-      }
     }
     
     ul{
       list-style-type: none;
       a{
         color: inherit;
+        transition: all linear .4s;
+      }
+      a:hover{
+        color: blue;
       }
       li:first-child{
         margin-bottom: toRem(14);
@@ -71,7 +64,7 @@ footer {
     padding-top: toRem(24);
     border-top: 2px solid #E5E6EB;
     
-    @media (max-width: 480px){
+    @include media-breakpoint-down(xs-3){
       padding-top: toRem(32);
       padding-bottom: toRem(50);
     }
@@ -82,7 +75,7 @@ footer {
       justify-content: space-between;
       align-items: center;
 
-      @media (max-width: 480px){
+      @include media-breakpoint-down(xs-3){
         flex-direction: column;
         gap: toRem(34);
       }
@@ -91,10 +84,10 @@ footer {
         width: 27.777%;
         justify-content: center;
         
-        @media(max-width:1200px){
+        @include media-breakpoint-down(xl){
           width: 33.777%;
         }
-        @media (max-width: 480px){
+        @include media-breakpoint-down(xs-3){
           width: 100%;
           display: flex;
         }
@@ -107,10 +100,10 @@ footer {
         font-size: toRem(16);
         color: #6C727F;
 
-        @media(max-width:1200px){
+        @include media-breakpoint-down(xl){
           width: 30.777%;
         }
-        @media (max-width: 480px){
+        @include media-breakpoint-down(xs-3){
           width: 100%;
         }
       }
@@ -120,7 +113,7 @@ footer {
         width: 27.777%;
         justify-content: flex-end;
         
-        @media (max-width: 480px){
+        @include media-breakpoint-down(xs-3){
           width: 100%;
           justify-content: center;
         }
@@ -128,12 +121,16 @@ footer {
           display: flex;
           justify-content: space-between;
           width: 82.758%;
-          @media (max-width: 480px){
+          @include media-breakpoint-down(xs-3){
             width: 100%;
             justify-content: space-around;
           }
           img{
             opacity: 0.5;
+            transition: all linear .4s;
+          }
+          img:hover{
+            opacity: 1;
           }
         }
       }

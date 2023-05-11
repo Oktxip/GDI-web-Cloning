@@ -21,7 +21,7 @@
         color: #0FBFE5;
       }
       
-      @media (max-width : 480px){
+      @include media-breakpoint-down(xs-3){
         width: 100%;
         text-align: center;
       }
@@ -50,7 +50,7 @@
       display: flex;
       justify-content: center;
 
-      @media (max-width : 480px) {
+      @include media-breakpoint-down(xs-3) {
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,7 @@
 
       .company-content-left{
         display: relative;
-        @media (max-width : 1200px){
+        @include media-breakpoint-down(xl){
           padding-top: 2rem;
         }
 
@@ -66,10 +66,10 @@
           position: relative;
           right: toRem(40);
           width: 634px;
-          @media (max-width : 1200px){
+          @include media-breakpoint-down(xl){
             width: 100%;
           }
-          @media (max-width : 480px){
+          @include media-breakpoint-down(xs-3){
             width: 100%;
             right: toRem(0);
           }
@@ -80,10 +80,10 @@
         width: 42.986%;
         padding-top: toRem(105);
 
-        @media (max-width : 1200px){
+        @include media-breakpoint-down(xl){
             width: 54%;
           }
-        @media (max-width : 480px){
+        @include media-breakpoint-down(xs-3){
           padding-top: toRem(0);
           width: 100%;
           text-align: center;
@@ -94,7 +94,7 @@
           font-weight: 700;
           color: #0B0A0F;
 
-          @media (max-width : 480px){
+          @include media-breakpoint-down(xs-3){
             display: contents;
           }
         }

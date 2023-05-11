@@ -61,7 +61,7 @@
       grid-template-columns: repeat(3,1fr);
       gap: 2.5rem;
       
-      @media (max-width : 480px){
+      @include media-breakpoint-down(xs-3){
         flex-direction: column;
         align-items: center;
         width: 90%;
@@ -78,7 +78,7 @@
         text-align: center;
         height: max-content;
 
-        @media (max-width : 480px){
+        @include media-breakpoint-down(xs-3){
           width: 100%;
         }
         .customer-frame-content-image{
@@ -108,7 +108,7 @@
             line-height: toRem(28);
             text-align: center;
             color: #394150;
-            @media(max-width:1200px){
+            @include media-breakpoint-down(xl){
               width: 80%;
             }
           }

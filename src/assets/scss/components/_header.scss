@@ -10,9 +10,9 @@ header{
   background: transparent;
   position: fixed;
   color: $white;
-  transition: all linear 2s;
+  transition: all linear .4s;
   flex: 1;
-  z-index: 1000;
+  z-index: 101;
   width: 100%;
   
   
@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
     align-items: center;
     
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       justify-content: space-around;
     }
 
@@ -38,13 +38,13 @@ header{
       align-items: center;
       cursor: pointer;
     
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         display: flex;
       }
     }
     
     .navigation-active{
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         display: flex !important;
         left: 0 !important;
       }
@@ -55,11 +55,11 @@ header{
       justify-content: space-between;
       padding-left: 2rem;
       
-      @media(max-width:1200px){
+      @include media-breakpoint-down(xl){
         padding-left: 1.125rem;
       }
       
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         display: none;
         flex-direction: column;
         align-items: center;
@@ -80,36 +80,42 @@ header{
         width: 53.875%;
         align-items: center;
 
-        @media(max-width:1200px){
+        @include media-breakpoint-down(xl){
           width: auto;
           flex: 1;
         }
         
-        @media(max-width:480px){
+        @include media-breakpoint-down(xs-3){
           flex-direction: column;
           gap: toRem(5);
         }
         .navigation-link-button{
+          font-weight: 700;
+          transition: all linear .4s;
           padding-top: toRem(4);
           text-decoration: none;
           height: 100%;
           display: flex;
           align-items: center;
+          border-bottom: 0.06rem solid transparent;
         }
         .navigation-link-button:hover{
-          border-bottom: 1px solid white;
+          border-bottom: 0.06rem solid $white;
         }
       }
       .navigation-btn{
         display: flex;
         text-align: center; 
         justify-content: flex-end;
+        font-weight: 700;
+        gap: .25rem;
 
-        @media(max-width:480px){
+        @include media-breakpoint-down(xs-3){
           flex-direction: column;
           margin-top: 2rem;
         }
         .navigation-btn-login{
+          transition: all linear .4s;
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -117,16 +123,21 @@ header{
           padding: toRem(12) toRem(16);
           gap: toRem(10);
           width: toRem(144);
-          height: toRem(50);
           flex: none;
+          border-radius: toRem(10);
           order: 1;
           flex-grow: 0;
-          @media(max-width:480px){
+          border: .06rem solid transparent;
+          
+          @include media-breakpoint-down(xs-3){
             background: rgba(255, 255, 255, 0.247);
-            border-radius: toRem(10);
           }
         }
+        .navigation-btn-login:hover{
+          border: .06rem solid $white;
+        }
         .navigation-btn__sign{
+          transition: all linear .4s;
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -134,17 +145,22 @@ header{
           padding: toRem(12) toRem(16);
           gap: toRem(10);
           width: toRem(144);
-          height: toRem(50);
-          background: #5DB8D0;
+          background: #5db7d0b0;
           box-shadow: 8px 18px 60px rgba(0, 0, 0, 0.08);
           border-radius: toRem(10);
           flex: none;
           order: 1;
           flex-grow: 0;
+          border: .06rem solid transparent;
 
-          @media(max-width:480px){
+          @include media-breakpoint-down(xs-3){
             margin-top: 1rem;
           }
+        }
+        .navigation-btn__sign:hover{
+          color: #5DB8D0;
+          background: $white;
+          border: .06rem solid #5DB8D0;
         }
       }
     }

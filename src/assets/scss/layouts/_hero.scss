@@ -20,7 +20,7 @@
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
     
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       height: 48.625rem;
       @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -42,7 +42,7 @@
       margin-top: toRem(387.6);
       margin-left: toRem(567);
       z-index: 1;
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         display: none;
       }
     }
@@ -52,7 +52,7 @@
       position: absolute;
       top: toRem(699);
       z-index: 2;
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         top: toRem(499);
       }
     }
@@ -60,7 +60,7 @@
       position: absolute;
       margin-top: toRem(752);
       z-index: 1;
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         margin-top: toRem(552);
       }
     }
@@ -70,7 +70,7 @@
       position: absolute;
       z-index: 1;
       width: toRem(249);
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         display: none;
       }
     }
@@ -80,7 +80,7 @@
       position: absolute;
       z-index: 2;
       width: toRem(159);
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         display: none;
       }
     }
@@ -91,7 +91,7 @@
     justify-content: space-between;
     margin-bottom: toRem(135.76);
     
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       flex-direction: column;
       text-align: center;
       justify-content: center;
@@ -104,13 +104,6 @@
       width: 48.819%;
       
       
-      @include media-breakpoint-up(di isi sana variable grid-breakpoints){
-
-      }
-      
-
-
-      
       @include media-breakpoint-down(xxl){
       left: toRem(-20);
       position: relative;
@@ -118,16 +111,16 @@
       @include media-breakpoint-down(xl){
       left: toRem(-15);
       }
-      @media(max-width:1064px){
+      @include media-breakpoint-down(lg-2){
       left: toRem(-10);
       }
-      @media(max-width:992px){
+      @include media-breakpoint-down(lg){
       left: toRem(-5);
       }
-      @media(max-width:768px){
+      @include media-breakpoint-down(md){
       left: 0rem;
       }
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         width: 100%;
       }
 
@@ -143,7 +136,7 @@
           width:  88.194%;
           margin-top: toRem(8);
           font-weight: 10;
-          @media(max-width:480px){
+          @include media-breakpoint-down(xs-3){
             width: 100%;
           }
         }
@@ -152,21 +145,20 @@
       .hero-left-btn{
         display: flex;
         margin-top: toRem(32);
-        width: toRem(384);
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 20px;
         
-        @media (max-width: 480px) {
+        @include media-breakpoint-down(xs-3) {
           width: 100%;
           flex-direction: column;
           align-items: center;
-          justify-content: space-between;
         }
         a{
-          @media (max-width: 480px) {
+          @include media-breakpoint-down(xs-3) {
             width: 100% !important;
           }
           div{
-            @media (max-width: 480px) {
+            @include media-breakpoint-down(xs-3) {
               width: 100% !important;
             }
           }
@@ -197,11 +189,11 @@
       width: 47.986%;
       position: relative;
       
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         width: 100%;
       }
       img{
-        @media(max-width:480px){
+        @include media-breakpoint-down(xs-3){
           width: 100%;
         }
       }
@@ -210,7 +202,7 @@
         z-index: -1;
         margin-left: toRem(-361);
         margin-top: toRem(-518.64);
-        @media(max-width:480px){
+        @include media-breakpoint-down(xs-3){
           display: none;
         }
       }
@@ -221,13 +213,13 @@
     right: toRem(0);
     top: toRem(418.64);
     z-index: 2;
-    @media(max-width:1200px){
+    @include media-breakpoint-down(xl){
       top: toRem(338.64);
     }
-    @media(max-width:1064px){
+    @include media-breakpoint-down(lg-2){
       width: 46%;
     }
-    @media(max-width:480px){
+    @include media-breakpoint-down(xs-3){
       display: none;
     }
   }
