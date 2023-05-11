@@ -19,13 +19,21 @@ footer {
       
       ul:last-child{
         position: absolute;
-        top: 31rem;
+        top: 26rem;
         width: 151.5px;
       }
     }
-
+    @media (max-width: 360px){
+      ul:last-child{
+        top: 31rem;
+      }
+    }
+    
     ul{
       list-style-type: none;
+      a{
+        color: inherit;
+      }
       li:first-child{
         margin-bottom: toRem(14);
         font-weight: 700;
@@ -83,6 +91,9 @@ footer {
         width: 27.777%;
         justify-content: center;
         
+        @media(max-width:1200px){
+          width: 33.777%;
+        }
         @media (max-width: 480px){
           width: 100%;
           display: flex;
@@ -95,6 +106,10 @@ footer {
         justify-content: center;
         font-size: toRem(16);
         color: #6C727F;
+
+        @media(max-width:1200px){
+          width: 30.777%;
+        }
         @media (max-width: 480px){
           width: 100%;
         }

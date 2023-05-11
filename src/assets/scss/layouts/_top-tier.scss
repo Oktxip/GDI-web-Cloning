@@ -14,6 +14,10 @@
     
     .top-tier-left{
       width: toRem(388);
+      
+      @media(max-width:1200px){
+        width: toRem(356);
+      }
       @media(max-width:480px){
         width: 100%;
         display: flex;
@@ -33,6 +37,7 @@
       padding-left: toRem(44);
       margin-top: toRem(15);
 
+      
       @media(max-width:480px){
         width: 100%;
         display: flex;
@@ -53,6 +58,13 @@
         display: flex;
         justify-content: space-between;
         padding-top: toRem(32);
+        z-index: 10;
+        position: relative;
+        
+        @media(max-width:1200px){
+          row-gap: 20px;
+          flex-wrap: wrap;
+        }
         @media(max-width:480px){
           display: none;
         }
@@ -74,11 +86,13 @@
       flex: 1;
       display: flex;
       justify-content: space-around;
+      z-index: 10;
     }
     .a2{
       flex: 1;
       display: flex;
       justify-content: space-around;
+      z-index: 10;
     }
     
     @media(max-width:480px){

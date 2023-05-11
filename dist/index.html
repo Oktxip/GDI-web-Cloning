@@ -21,34 +21,30 @@ License: -
   <meta property="og:description" content="">
 
   <!-- Start::Global Styles (used by all pages) -->
-  <link href="css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
   <!-- End::Global Styles -->
 
   <!-- Start::Page Styles (used by this page) -->
   <link href="assets/css/pages/home-v1.css" rel="stylesheet" type="text/css" />
   <!-- End::Page Styles -->
-  
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+  <!-- Start::Page Styles (caraousel slick) -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- End::Page Styles -->
+
 </head>
 
 <body>
   <!-- Start::Header Section -->
-  <header>
-    <div class="bg-main">
-      <img src="media/images/R1-1.png" alt="" class="bg-main--R1-1">
-      <img src="media/images/Path-1.png" alt="" class="bg-main--path-1a">
-      <img src="media/images/Path(1).png" alt="" class="bg-main--path-1b">
-      <img src="media/images/Path.png" alt="" class="bg-main--path-2a">
-      <img src="media/images/Path.png" alt="" class="bg-main--path-2b">
-    </div>
+  <header id="header">
     <div class="container nav">
       <div class="nav-brand">
-        <img src="media/images/GDI-W.png" alt="">
+        <img src="assets/media/images/GDI-W.png" alt="">
       </div>
       <div class="nav-hamburger-menu">
-        <span class="hamburger-icon"><img src="media/images/menu.svg" alt=""></span>
+        <span class="hamburger-icon"><img src="assets/media/images/menu.svg" alt=""></span>
       </div>
       
       <div class="navigation">
@@ -65,8 +61,20 @@ License: -
         </div>
       </div>
     </div>
-    
-    
+  </header>
+  <!-- End::Header Section -->
+
+  <!-- Start:: hero  Section -->
+  <section class="her">
+    <div class="bg-main">
+      <img src="assets/media/images/R1-1.png" alt="" class="bg-main--R1-1">
+      <img src="assets/media/images/Path-1.png" alt="" class="bg-main--path-1a">
+      <img src="assets/media/images/Path(1).png" alt="" class="bg-main--path-1b">
+      <img src="assets/media/images/Path.png" alt="" class="bg-main--path-2a">
+      <img src="assets/media/images/Path.png" alt="" class="bg-main--path-2b">
+    </div>
+    <img src="assets/media/images/R1-3.png" alt="" class="bg-main--R1-3">
+
     <div class="container hero">
       <div class="hero-left">
         <div class="hero-left-text">
@@ -76,35 +84,34 @@ License: -
 
         <div class="hero-left-btn">
           <a href="#"><div class="w-btn">Try GDI Free</div></a>
-          <a href="#"><div class="wd-btn"><img src="media/images/PlayBtn.svg"> Watch Demo</div></a>
+          <a href="#"><div class="wd-btn"><img src="assets/media/images/PlayBtn.svg"> Watch Demo</div></a>
         </div>
-
         <div class="hero-left-icon">
           <li>
             <a class="hero-left-icon-pin">*no credit card required</a>
           </li>
           <li>
-            <img src="media/images/Frame 1455.png" alt="" class="hero-left-icon-brand">
+            <a href="#">
+              <img src="assets/media/images/Frame 1455.png" alt="" class="hero-left-icon-brand">
+            </a>
           </li>
         </div>
       </div>
 
       <div class="hero-right">
-        <img src="media/images/Group 13996.png" alt="" class="hero-right-image" >
-        <img src="media/images/R1-2.png" alt="" class="bg-main--R1-2">
-        <img src="media/images/R1-3.png" alt="" class="bg-main--R1-3">
+        <img src="assets/media/images/Group 13996.png" alt="" class="hero-right-image" >
+        <img src="assets/media/images/R1-2.png" alt="" class="bg-main--R1-2">
       </div>
     </div>
-  
-  </header>
-  <!-- End::Header Section -->
+  </section>
+  <!-- End::hero Section -->
 
   <!-- Start:: Top  Section -->
   <section class="top">
     <div class="top-tier container">
       <div class="top-tier-left">
         <div class="top-tier-left-user">
-          <img src="media/images/Users.png" alt="">
+          <img src="assets/media/images/Users.png" alt="">
         </div>
         <h6 class="top-tier-left-text">
           Trigger growth for your company by using the best business research intelligence tools for a fraction of the cost
@@ -116,22 +123,37 @@ License: -
           Trusted by top-tier companies
         </h6>
         <div class="top-tier-right-brand">
-          <img src="media/images/Facebook.png" alt="">
-          <img src="media/images/AirBNB.png" alt="">
-          <img src="media/images/HubSpot.png" alt="">
-          <img src="media/images/Microsoft.png" alt="">
+          <a href="#">
+            <img src="assets/media/images/Facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="assets/media/images/AirBNB.png" alt="">
+          </a>
+          <a href="#">
+            <img src="assets/media/images/HubSpot.png" alt="">
+          </a>
+          <a href="#">
+            <img src="assets/media/images/Microsoft.png" alt="">
+          </a>
         </div>
       </div>
-      
     </div>
     <div class="top-brand">
       <div class="a1">
-        <img src="media/images/Facebook.png" alt="">
-        <img src="media/images/AirBNB.png" alt="">
+        <a href="#">
+          <img src="assets/media/images/Facebook.png" alt="">
+        </a>
+        <a href="#">
+          <img src="assets/media/images/AirBNB.png" alt="">
+        </a>
       </div>
       <div class="a2">
-        <img src="media/images/HubSpot.png" alt="">
-        <img src="media/images/Microsoft.png" alt="">
+        <a href="#">
+          <img src="assets/media/images/HubSpot.png" alt="">
+        </a>
+        <a href="#">
+          <img src="assets/media/images/Microsoft.png" alt="">
+        </a>
       </div>
     </div>
   </section>
@@ -140,35 +162,50 @@ License: -
   <!-- Start:: Customer  Section -->
   <section class="customer">
     <div class="customer-bg-main">
-      <img src="media/images/R6.png" alt="">
+      <img src="assets/media/images/R6.png" alt="">
+      <img src="assets/media/images/rcrgl-22.png" alt="" class="r-9">
     </div>
 
     <div class="customer-frame">
       <div class="customer-frame-text">
         <h2>Find your customers and <span>close more sales </span></h2>
       </div>
-
-
-
-      <div class="customer-frame-content container">
-        <div class="customer-frame-content-left">
-          <img src="media/images/C2.png" alt="image 1" width="225px">
-          <a>Are you a Business Leader?</a>
-          <p>Find your customers  and close more sales </p>
+      
+      <div class="customer-frame-con container">
+        <div class="customer-frame-content">
+          <div class="customer-frame-content-image">
+            <img src="assets/media/images/tff-1.png" alt="image 1">
+          </div>
+          <div class="customer-frame-content-tittle">
+            <a>Are you a Business Leader?</a>
+          </div>
+          <div class="customer-frame-content-subtittle">
+            <p>Find your customers  and close more sales </p>
+          </div>
         </div>
-        <div class="customer-frame-content-mid">
-          <img src="media/images/C2.png" alt="image 2" width="225px">
-          <a>Are you a Marketer? </a>
-          <p>Transform your marketing strategy, research competitors, and grow your business </p>
+        <div class="customer-frame-content">
+          <div class="customer-frame-content-image">
+            <img src="assets/media/images/tff-2.png" alt="image 2">
+          </div>
+          <div class="customer-frame-content-tittle">
+            <a>Are you a Marketer? </a>
+          </div>
+          <div class="customer-frame-content-subtittle">
+            <p>Transform your marketing strategy, research competitors, and grow your business </p>
+          </div>
         </div>
-        <div class="customer-frame-content-right">
-          <img src="media/images/C2.png" alt="image 3" width="225px">
-          <a>Are you a Sales Professional?.</a>
-          <p>Enhance sales Strengthen partnerships, close more revenue </p>
+        <div class="customer-frame-content">
+          <div class="customer-frame-content-image">
+            <img src="assets/media/images/tff-3.png" alt="image 3">
+          </div>
+          <div class="customer-frame-content-tittle">
+            <a>Are you a Sales Professional?.</a>
+          </div>
+          <div class="customer-frame-content-subtittle">
+            <p>Enhance sales Strengthen partnerships, close more revenue </p>
+          </div>
         </div>
       </div>
-
-
       <div class="customer-frame-button">
         <a href="#" class="b-btn">Try GDI Free </a>
       </div>
@@ -191,7 +228,7 @@ License: -
     <div class="company-cont">
       <div class="company-content">
       <div class="company-content-left">
-        <img src="media/images/IL1.png" alt="img 1" width="634px">
+        <img src="assets/media/images/IL1.png" alt="img 1">
       </div>
 
       <div class="company-content-right">
@@ -209,7 +246,7 @@ License: -
 
       <div class="company-content">
       <div class="company-content-left">
-        <img src="media/images/IL2.png" alt="img 2" width="634px">
+        <img src="assets/media/images/IL2.png" alt="img 2">
       </div>
   
       <div class="company-content-right">
@@ -227,7 +264,7 @@ License: -
   
       <div class="company-content">
         <div class="company-content-left">
-          <img src="media/images/IL3.png" alt="img 3" width="634px">
+          <img src="assets/media/images/IL3.png" alt="img 3">
         </div>
     
         <div class="company-content-right">
@@ -265,7 +302,7 @@ License: -
         </div>
       </div>
       <div class="benefit-content1-right">
-        <img src="media/images/BF1.svg" alt="Img 1" width="837.115px">
+        <img src="assets/media/images/BF1.svg" alt="Img 1" width="837.115px">
       </div>
     </div>
 
@@ -286,7 +323,7 @@ License: -
         </div>
       </div>
       <div class="benefit-content2-right">
-        <img src="media/images/BF2.svg" alt="Img 1" width="837.115px">
+        <img src="assets/media/images/BF2.svg" alt="Img 1" width="837.115px">
       </div>
     </div>
   </section>
@@ -307,19 +344,19 @@ License: -
         </h4>
         <div class="insight-card-ceklist">
           <li>
-            <img src="media/images/Checkmark.svg">
+            <img src="assets/media/images/Checkmark.svg">
             Explore over 60M company profiles
           </li>
           <li>
-            <img src="media/images/Checkmark.svg">
+            <img src="assets/media/images/Checkmark.svg">
             Discover global stock market
           </li>
           <li>
-            <img src="media/images/Checkmark.svg">
+            <img src="assets/media/images/Checkmark.svg">
             Search through SEO, Google Ads and analytics
           </li>
         </div>
-        <img class="card-img" src="media/images/card1.png" alt="">
+        <img class="card-img" src="assets/media/images/card1.png" alt="">
       </div>
       
       <div class="insight-card">
@@ -328,19 +365,19 @@ License: -
         </h4>
         <div class="insight-card-ceklist">
           <li>
-            <img src="media/images/Checkmark.svg">
+            <img src="assets/media/images/Checkmark.svg">
             Get the best of both worlds with GDI.
           </li>
           <li>
-            <img src="media/images/Checkmark.svg">
+            <img src="assets/media/images/Checkmark.svg">
             Research intelligence at a low price
           </li>
           <li>
-            <img src="media/images/Checkmark.svg">
+            <img src="assets/media/images/Checkmark.svg">
             One platform for all your market research needs
           </li>
         </div>
-        <img class="card-img" src="media/images/card2.png" alt="">
+        <img class="card-img" src="assets/media/images/card2.png" alt="">
       </div>
     </div>
 
@@ -352,17 +389,17 @@ License: -
 
   <!-- Start:: feature  Section -->
   <section class="feature">
-    <h2 class="feature-ttl">
+    <h2 class="feature-ttl container">
       Research and Intelligence is an essential for a growth-oriented company
     </h2>
 
     <div class="feature-ctn">
-      <img src="media/images/bas.png" class="rectangel">
+      <img src="assets/media/images/bas.png" class="rectangel">
       <div class="button-con">
         <div class="button-container">
-          <button class="on show-content-button" data-content="ctn1"><img class="mh" src="media/images/investigation 1.svg" alt=""><span class="mh">Insights and data </span></button>
-          <button class="show-content-button" data-content="ctn2"><img class="mh" src="media/images/ph_cpu-fill.svg" alt=""><span class="mh">AI-Driven Plarform</span></button>
-          <button class="show-content-button" data-content="ctn3"><img class="mh" src="media/images/megaphone 1.svg" alt=""><span class="mh">Marketing Research</span></button>
+          <button class="on show-content-button" data-content="ctn1"><img class="mh" src="assets/media/images/investigation 1.svg" alt=""><span class="mh">Insights and data </span></button>
+          <button class="show-content-button" data-content="ctn2"><img class="mh" src="assets/media/images/ph_cpu-fill.svg" alt=""><span class="mh">AI-Driven Plarform</span></button>
+          <button class="show-content-button" data-content="ctn3"><img class="mh" src="assets/media/images/megaphone 1.svg" alt=""><span class="mh">Marketing Research</span></button>
         </div>
       </div>
       
@@ -370,24 +407,24 @@ License: -
       <div class="ctn-container">
         <div id="ctn1" class="ctn js-ctn on">
             <div class="ctn-left">
-              <img src="media/images/Fr1.svg" alt="">
+              <img src="assets/media/images/Fr1.svg" alt="">
             </div>
 
             <div class="ctn-right">
               <div class="ctn-right-lo">
-                <img src="media/images/lo1.svg" alt="">
+                <img src="assets/media/images/lo1.svg" alt="">
               </div>
-              <h2 class="ctn-right-ti">
+              <h3 class="ctn-right-ti">
                 Find the right insights and data to fuel your growth strategy.
-              </h2>
+              </h3>
               <div class="ctn-right-li">
-                <li> <img src="media/images/check-2.svg" alt="">
+                <li> <img src="assets/media/images/check-2.svg" alt="">
                   World-Class Technology
                 </li>
-                <li> <img src="media/images/check-2.svg" alt="">
+                <li> <img src="assets/media/images/check-2.svg" alt="">
                   Get A Competitive Edge
                 </li>
-                <li> <img src="media/images/check-2.svg" alt="">
+                <li> <img src="assets/media/images/check-2.svg" alt="">
                   Continuous Innovation
                 </li>
               </div>
@@ -396,24 +433,24 @@ License: -
 
         <div id="ctn2" class="ctn js-ctn">
           <div class="ctn-left">
-            <img src="media/images/Fr2.svg" alt="">
+            <img src="assets/media/images/Fr2.svg" alt="">
           </div>
 
           <div class="ctn-right">
             <div class="ctn-right-lo">
-              <img src="media/images/lo2.svg" alt="">
+              <img src="assets/media/images/lo2.svg" alt="">
             </div>
-            <h2 class="ctn-right-ti">
+            <h3 class="ctn-right-ti">
               Get valuable market insights with GDI’s AI-Driven research platform.
-            </h2>
+            </h3>
             <div class="ctn-right-li">
-              <li> <img src="media/images/check-2.svg" alt="">
+              <li> <img src="assets/media/images/check-2.svg" alt="">
                 Easily Access Critical Insights
               </li>
-              <li> <img src="media/images/check-2.svg" alt="">
+              <li> <img src="assets/media/images/check-2.svg" alt="">
                 Stay Ahead Of The Competition
               </li>
-              <li> <img src="media/images/check-2.svg" alt="">
+              <li> <img src="assets/media/images/check-2.svg" alt="">
                 Benefit from GDI Global Partnerships
               </li>
             </div>
@@ -422,24 +459,24 @@ License: -
 
         <div id="ctn3" class="ctn js-ctn">
           <div class="ctn-left">
-            <img src="media/images/Fr3.svg" alt="">
+            <img src="assets/media/images/Fr3.svg" alt="">
           </div>
 
           <div class="ctn-right">
             <div class="ctn-right-lo">
-              <img src="media/images/lo3.svg" alt="">
+              <img src="assets/media/images/lo3.svg" alt="">
             </div>
-            <h2 class="ctn-right-ti">
+            <h3 class="ctn-right-ti">
               Streamline your Marketing, Customer Success, Research & Leadership functions
-            </h2>
+            </h3>
             <div class="ctn-right-li">
-              <li> <img src="media/images/check-2.svg" alt="">
+              <li> <img src="assets/media/images/check-2.svg" alt="">
                 Increase Your Team's Output
               </li>
-              <li> <img src="media/images/check-2.svg" alt="">
+              <li> <img src="assets/media/images/check-2.svg" alt="">
                 Locate Inaccuracies
               </li>
-              <li> <img src="media/images/check-2.svg" alt="">
+              <li> <img src="assets/media/images/check-2.svg" alt="">
                 Make Better Decisions
               </li>
             </div>
@@ -460,7 +497,7 @@ License: -
         Our Clients send us bunch of smilies with our services and we love them
       </div>
     </div>
-    <img src="media/images/as.png" class="review-rtg">
+    <img src="assets/media/images/as.png" class="review-rtg">
 
     <div class="review-cs">
       <div class="carousel">
@@ -470,7 +507,7 @@ License: -
               <p class="review-text">“GDI has been an amazing help when it comes to finding potential partner companies and stakeholder credentials. The platform is very accurate, so I don't need to spend time double-checking the details.  Thanks GDI!”</p>
               <div class="review-user">
                 <div class="review-user-photo">
-                  <img src="media/images/use1.svg" alt="">
+                  <img src="assets/media/images/use1.svg" alt="">
                 </div>
                 <div class="review-user-information">
                   <p class="review-user-information-username">Usman Toquir </p>
@@ -484,7 +521,7 @@ License: -
               <p class="review-text">“The platform has had a significant impact on our teams research abilities and find our competitors all in one place, we’ve been able to grow into new markets make with 75% increase in revenue.”</p>
               <div class="review-user">
                 <div class="review-user-photo">
-                  <img src="media/images/use2.svg" alt="">
+                  <img src="assets/media/images/use2.svg" alt="">
                 </div>
                 <div class="review-user-information">
                   <p class="review-user-information-username">Senior Executive </p>
@@ -498,7 +535,7 @@ License: -
               <p class="review-text">“It’s been a key platform for achieving deals at Davos.”</p>
               <div class="review-user">
                 <div class="review-user-photo">
-                  <img src="media/images/use3.svg" alt="">
+                  <img src="assets/media/images/use3.svg" alt="">
                 </div>
                 <div class="review-user-information">
                   <p class="review-user-information-username">Global Law Firm</p>
@@ -509,8 +546,8 @@ License: -
           </div>
         </div>
         <div class="carousel-bullets"></div>
-        <button class="carousel-prev"><img src="media/images/Chevron-l.svg" alt=""></button>
-        <button class="carousel-next"><img src="media/images/Chevron-r.svg" alt=""></button>
+        <button class="carousel-prev"><img src="assets/media/images/Chevron-l.svg" alt=""></button>
+        <button class="carousel-next"><img src="assets/media/images/Chevron-r.svg" alt=""></button>
       </div>
     </div>
   </section>
@@ -537,18 +574,18 @@ License: -
           </div>
   
           <div class="pricing-card-w-top-check">
-            <li><img src="media/images/check.svg"><span>1 User</span></li>
-            <li><img src="media/images/check.svg"><span>Expert Insights </span></li>
-            <li><img src="media/images/check.svg"><span>Chrome Extention </span></li>
-            <li><img src="media/images/check.svg"><span>Reports Database </span></li>
-            <li><img src="media/images/check.svg"><span>Companies Database </span></li>
-            <li><img src="media/images/check.svg"><span>Marketing Intelligence </span></li>
-            <li><img src="media/images/check.svg"><span>Employee Database</span></li>
-            <li><img src="media/images/check.svg"><span>Verified Emails </span></li>
-            <li><img src="media/images/check.svg"><div class="txt"><span>Global Stock Market and Data Markets</span></div></li>
-            <li><img src="media/images/check.svg"><span>Financial Information</span></li>
-            <li><img src="media/images/check.svg"><span>99.95% Uptime SLA</span></li>
-            <li><img src="media/images/check.svg"><span>Cancel Anytime</span></li>
+            <li><img src="assets/media/images/check.svg"><span>1 User</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Expert Insights </span></li>
+            <li><img src="assets/media/images/check.svg"><span>Chrome Extention </span></li>
+            <li><img src="assets/media/images/check.svg"><span>Reports Database </span></li>
+            <li><img src="assets/media/images/check.svg"><span>Companies Database </span></li>
+            <li><img src="assets/media/images/check.svg"><span>Marketing Intelligence </span></li>
+            <li><img src="assets/media/images/check.svg"><span>Employee Database</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Verified Emails </span></li>
+            <li><img src="assets/media/images/check.svg"><div class="txt"><span>Global Stock Market and Data Markets</span></div></li>
+            <li><img src="assets/media/images/check.svg"><span>Financial Information</span></li>
+            <li><img src="assets/media/images/check.svg"><span>99.95% Uptime SLA</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Cancel Anytime</span></li>
           </div>
       </div>
 
@@ -574,18 +611,18 @@ License: -
           </div>
   
           <div class="pricing-card-b-top-check">
-            <li><img src="media/images/check-2.svg"><span>All-Pro Features, plus</span></li>
-            <li><img src="media/images/check-2.svg"><span>Global Research</span></li>
-            <li><img src="media/images/check-2.svg"><span>Unlimited Credits</span></li>
-            <li><img src="media/images/check-2.svg"><span>Unlimited Verified emails</span></li>
-            <li><img src="media/images/check-2.svg"><span>Unlimited Usage</span></li>
-            <li><img src="media/images/check-2.svg"><span>Unlimited Search</span></li>
-            <li><img src="media/images/check-2.svg"><span>Marketing Competitors</span></li>
-            <li><img src="media/images/check-2.svg"><span>Google Ads History</span></li>
-            <li><img src="media/images/check-2.svg"><span>Unlimited Prospecting</span></li>
-            <li><img src="media/images/check-2.svg"><span>Unlimited Tracking</span></li>
-            <li><img src="media/images/check-2.svg"><span>Latest Company News</span></li>
-            <li><img src="media/images/check-2.svg"><span>100% Global Market Coverage </span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>All-Pro Features, plus</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Global Research</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Unlimited Credits</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Unlimited Verified emails</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Unlimited Usage</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Unlimited Search</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Marketing Competitors</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Google Ads History</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Unlimited Prospecting</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Unlimited Tracking</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>Latest Company News</span></li>
+            <li><img src="assets/media/images/check-2.svg"><span>100% Global Market Coverage </span></li>
           </div>
       </div>
   
@@ -607,14 +644,14 @@ License: -
           
   
           <div class="pricing-card-w-top-check">
-            <li><img src="media/images/check.svg"><span>All Premium Features, plus</span></li>
-            <li><img src="media/images/check.svg"><span>3 Users</span></li>
-            <li><img src="media/images/check.svg"><span>Unlimited Access</span></li>
-            <li><img src="media/images/check.svg"><span>Unlimited Exports</span></li>
-            <li><img src="media/images/check.svg"><span>Premium Reports</span></li>
-            <li><img src="media/images/check.svg"><span>30+ Years of Data</span></li>
-            <li><img src="media/images/check.svg"><span>Global Coverage</span></li>
-            <li><img src="media/images/check.svg"><span>Global News </span></li>
+            <li><img src="assets/media/images/check.svg"><span>All Premium Features, plus</span></li>
+            <li><img src="assets/media/images/check.svg"><span>3 Users</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Unlimited Access</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Unlimited Exports</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Premium Reports</span></li>
+            <li><img src="assets/media/images/check.svg"><span>30+ Years of Data</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Global Coverage</span></li>
+            <li><img src="assets/media/images/check.svg"><span>Global News </span></li>
           </div>
       </div>
   
@@ -629,8 +666,8 @@ License: -
   
   <!-- Start:: cta  Section -->
   <section class="cta container">
-    <img src="media/images/tang1.png" alt="img 1" class="cta-bg-1">
-    <img src="media/images/tang2.png" alt="img 2" class="cta-bg-2">
+    <img src="assets/media/images/tang1.png" alt="img 1" class="cta-bg-1">
+    <img src="assets/media/images/tang2.png" alt="img 2" class="cta-bg-2">
     
     <div class="cta-content">
       <h2 class="cta-content-tittle">
@@ -653,38 +690,38 @@ License: -
       <div class="footer-start container">
         <ul>
           <li>Company</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Content PartnerShip</li>
+          <li> <a href="#">About Us</a></li>
+          <li> <a href="#">Careers</a></li>
+          <li> <a href="#">Content PartnerShip</a></li>
         </ul>
         <ul>
           <li>Service</li>
-          <li>Consulting Service</li>
-          <li>Platforms</li>
+          <li> <a href="#">Consulting Service</a></li>
+          <li> <a href="#"> Platforms</a></li>
         </ul>
         <ul>
           <li>Our Analyze team</li>
-          <li>Analyze</li>
-          <li>Methodology</li>
-          <li>Research Process</li>
-          <li>Industri Exsperts</li>
+          <li> <a href="#"> Analyze</a></li>
+          <li> <a href="#"> Methodology</a></li>
+          <li> <a href="#"> Research Process</a></li>
+          <li> <a href="#"> Industri Exsperts</a></li>
         </ul>
         <ul>
           <li>Our Technology</li>
-          <li>AI Machine Learning</li>
-          <li>Digital Intelegence</li>
-          <li>ETL Data Engine</li>
-          <li>API-Led Connectivity</li>
-          <li>Automation Tectnology</li>
-          <li>AI Powered Search</li>
+          <li> <a href="#"> AI Machine Learning</a></li>
+          <li> <a href="#"> Digital Intelegence</a></li>
+          <li> <a href="#"> ETL Data Engine</a></li>
+          <li> <a href="#"> API-Led Connectivity</a></li>
+          <li> <a href="#"> Automation Tectnology</a></li>
+          <li> <a href="#"> AI Powered Search</a></li>
         </ul>
         <ul>
           <li>Terms Of Use</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Condition</li>
-          <li>GDPR</li>
-          <li>Do Not Sell My Information</li>
-          <li>Site Map</li>
+          <li> <a href="#"> Privacy Policy</a></li>
+          <li> <a href="#"> Terms & Condition</a></li>
+          <li> <a href="#"> GDPR</a></li>
+          <li> <a href="#"> Do Not Sell My Information</a></li>
+          <li> <a href="#"> Site Map</a></li>
         </ul>
       </div>
       
@@ -693,15 +730,15 @@ License: -
             Featured on Product Hunt and G2
           </li>
           <li class="footer-mid-list">
-            <img src="media/images/Product Hunt.png" alt="">
-            <img src="media/images/G2.png" alt="" class="footer-mid-list--img">
+            <img src="assets/media/images/Product Hunt.png" alt="">
+            <img src="assets/media/images/G2.png" alt="" class="footer-mid-list--img">
           </li>
       </div>
 
       <div class="footer-end">
         <div class="container cr">
           <div class="cr-brand">
-            <img src="media/images/GDI-B.png" alt="">
+            <img src="assets/media/images/GDI-B.png" alt="">
           </div>
 
           <div class="cr-copyright">
@@ -711,16 +748,16 @@ License: -
           <div class="cr-media">
             <div class="cr-media--wrapper">
               <a href="#">
-                <img src="media/images/FB.svg" alt="">
+                <img src="assets/media/images/FB.svg" alt="">
               </a>
               <a href="#">
-                <img src="media/images/IG.svg" alt="">
+                <img src="assets/media/images/IG.svg" alt="">
               </a>
               <a href="#">
-                <img src="media/images/TWT.svg" alt="">
+                <img src="assets/media/images/TWT.svg" alt="">
               </a>
               <a href="#">
-                <img src="media/images/IN.svg" alt="">
+                <img src="assets/media/images/IN.svg" alt="">
               </a>
             </div>
           </div>
@@ -731,10 +768,15 @@ License: -
 
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
-  <script src="js/scripts.bundle.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
   <!-- End::Global Bundle Scripts -->
   <!-- Start::Page Scripts (used by this page) -->
   <script src="assets/js/pages/home-v1.js"></script>
+  <!-- End::Page Scripts -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <!-- End::Page Scripts -->
 
 

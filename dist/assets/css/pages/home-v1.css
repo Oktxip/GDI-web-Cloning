@@ -614,7 +614,9 @@ progress {
 }
 
 body, html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
+  animation: all linear 0.2s;
 }
 
 @media (max-width: 480px) {

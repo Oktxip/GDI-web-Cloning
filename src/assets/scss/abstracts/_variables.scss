@@ -101,12 +101,19 @@ $min-contrast-ratio: 1.5;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  xs-1: 480px,
+  xs-1: 320px,
+  xs-2: 375px,
+  xs-3: 480px,
   sm: 576px,
   md: 768px,
   lg: 992px,
+  lg-2: 1064px,
   xl: 1200px,
-  xxl: 1440px
+  xxl: 1400px,
+  xxl-1: 1440px,
+  xxl-2: 1600px,
+  xxxl: 1800px,
+  xxxl-2: 2000px
 );
 // scss-docs-end grid-breakpoints
 

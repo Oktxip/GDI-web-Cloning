@@ -66,7 +66,10 @@
       img{
         position: relative;
         right: toRem(42.857);
-        
+
+        @media (max-width : 1200px){
+          width: 130%;
+        }
         @media (max-width : 480px){
           right: 0rem;
           width: 100%;
@@ -84,7 +87,10 @@
     left: toRem(-140);
     padding-top: toRem(36.62);
     flex-direction: row-reverse;
-    
+
+    @media (max-width : 1200px){
+      margin-bottom: toRem(100);
+    }
     @media (max-width : 480px){
       width: 100%;
       flex-direction: column-reverse;
@@ -137,6 +143,9 @@
         position: relative;
         right: 0.578562rem;
 
+        @media (max-width : 1200px){
+          width: 130%;
+        }
         @media (max-width : 480px){
           right: 0.578562rem;
           width: 100%;

@@ -21642,6 +21642,20 @@ jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
   })
 })
 
+// navbar scrolled ---------------------------------------------------------
+
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('header');
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  if (window.scrollY > 0) {
+    header.classList.remove('position-zero');
+    header.classList.add('position-scrolled');
+  } else {
+    header.classList.remove('position-scrolled');
+    header.classList.add('position-zero');
+  }
+});
+
 // hamburger navigation ---------------------------------------------------------
 
 const hamburgerIcon = document.querySelector('.hamburger-icon');
@@ -21731,6 +21745,10 @@ intervalId = setInterval(() => {
 // Event listeners for arrow buttons
 document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
 document.querySelector('.carousel-next').addEventListener('click', nextSlide);
+
+// slick slider -------------------------------------------------------------
+// sidebar slider ----------------------------------------------------------
+
 
 })();
 

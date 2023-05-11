@@ -58,9 +58,17 @@
 
       .company-content-left{
         display: relative;
+        @media (max-width : 1200px){
+          padding-top: 2rem;
+        }
+
         img{
           position: relative;
           right: toRem(40);
+          width: 634px;
+          @media (max-width : 1200px){
+            width: 100%;
+          }
           @media (max-width : 480px){
             width: 100%;
             right: toRem(0);
@@ -71,7 +79,10 @@
         display: block;
         width: 42.986%;
         padding-top: toRem(105);
-        
+
+        @media (max-width : 1200px){
+            width: 54%;
+          }
         @media (max-width : 480px){
           padding-top: toRem(0);
           width: 100%;

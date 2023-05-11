@@ -58,8 +58,11 @@
     .carousel {
       position: relative;
       width: 100%;
-      max-width: 1044px;
       margin: 0 auto;
+      max-width: toRem(1044);
+      @media (max-width : 1200px){
+        max-width: toRem(975);
+      }
       .carousel-container {
         display: flex;
         overflow-x: scroll;
@@ -68,7 +71,10 @@
         scroll-snap-type: x mandatory;
         -webkit-scroll-snap-type: x mandatory;
         justify-content: center;
-        width: 1044px;
+        width: toRem(1044);
+        @media (max-width : 1200px){
+          width: toRem(975);
+        }
         .carousel-item {
           flex-shrink: 0;
           width: 80%;
