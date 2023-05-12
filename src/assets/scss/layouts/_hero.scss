@@ -3,6 +3,10 @@
   padding-top: toRem(178);
   overflow: hidden;
   
+  @include media-breakpoint-down(xs-3){
+    padding-top: toRem(17);
+  }
+  
   .bg-main{
     background: radial-gradient(circle, rgba(44,163,201,1) 0%, #63b7a3 12%, rgba(80,139,226,1) 100%);
     position: absolute;
@@ -156,6 +160,8 @@
         a{
           @include media-breakpoint-down(xs-3) {
             width: 100% !important;
+            display: flex;
+            justify-content: center;
           }
           div{
             @include media-breakpoint-down(xs-3) {
