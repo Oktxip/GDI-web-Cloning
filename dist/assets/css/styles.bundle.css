@@ -20687,11 +20687,24 @@ textarea.form-control-lg {
 .customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-image {
   height: 12.0625rem;
 }
-.customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-image img {
+.customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-image .one {
   width: auto;
-  height: auto;
-  max-height: 164px;
-  max-width: 225px;
+  min-height: 10.25rem;
+  max-height: 10.25rem;
+  position: relative;
+  left: -1.8125rem;
+}
+.customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-image .two {
+  width: auto;
+  min-height: 10.25rem;
+  max-height: 10.25rem;
+}
+.customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-image .three {
+  width: auto;
+  min-height: 12.0625rem;
+  max-height: 12.0625rem;
+  position: relative;
+  top: -1.8125rem;
 }
 .customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-tittle {
   margin-top: 2rem;
@@ -21800,6 +21813,7 @@ textarea.form-control-lg {
   box-shadow: 0.5rem 1.125rem 3.75rem rgba(0, 0, 0, 0.08);
   border-radius: 0.625rem;
   font-weight: 700;
+  color: #00326D;
 }
 
 .w-btn:hover {
@@ -21829,7 +21843,6 @@ textarea.form-control-lg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   transition: all linear 0.4s;
 }
 
@@ -21844,7 +21857,6 @@ textarea.form-control-lg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #FFFFFF;
   background-clip: text;
-  text-fill-color: #FFFFFF;
   color: #FFFFFF;
   transition: all linear 0.4s;
 }
@@ -22103,15 +22115,13 @@ footer .footer-mid {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 4.0625rem;
+  list-style-type: none;
 }
-footer .footer-mid .footer-mid--list {
+footer .footer-mid .footer-mid-text {
   list-style-type: none;
   margin-bottom: 0.875rem;
 }
-footer .footer-mid .footer-mid-list {
-  list-style-type: none;
-}
-footer .footer-mid .footer-mid-list .footer-mid-list--img {
+footer .footer-mid .footer-mid-brand a:last-child {
   padding-left: 1.5rem;
 }
 footer .footer-end {

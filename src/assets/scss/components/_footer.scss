@@ -42,17 +42,17 @@ footer {
     text-align: center;
     margin-top: toRem(64);
     margin-bottom: toRem(65);
+    list-style-type: none;
 
 
-    .footer-mid--list{
+    .footer-mid-text{
       list-style-type: none;
       margin-bottom: toRem(14);
     }
 
-    .footer-mid-list{
-      list-style-type: none;
+    .footer-mid-brand{
 
-      .footer-mid-list--img{
+      a:last-child{
         padding-left: toRem(24);
       }
     }

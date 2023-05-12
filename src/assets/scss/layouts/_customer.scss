@@ -83,11 +83,24 @@
         }
         .customer-frame-content-image{
           height: toRem(193);
-          img{
+          .one{
             width: auto;
-            height: auto;
-            max-height: 164px;
-            max-width: 225px;
+            min-height: toRem(164);
+            max-height: toRem(164);
+            position: relative;
+            left: toRem(-29);
+          }
+          .two{
+            width: auto;
+            min-height: toRem(164);
+            max-height: toRem(164);
+          }
+          .three{
+            width: auto;
+            min-height: toRem(193);
+            max-height: toRem(193);
+            position: relative;
+            top: toRem(-29);
           }
         }
         .customer-frame-content-tittle{
