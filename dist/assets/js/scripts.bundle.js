@@ -8498,6 +8498,12 @@ $(document).ready(function () {
     showContent(el.currentTarget.dataset.content)
   })
 })
+// nabar hamburger effect -------------------------------------------------
+
+document.querySelector('.nav-hamburger-menu').addEventListener('click', function() {
+  this.classList.toggle('active');
+});
+
 
 // navbar scrolled ---------------------------------------------------------
 
@@ -8515,7 +8521,7 @@ window.addEventListener('scroll', function () {
 
 // hamburger navigation ---------------------------------------------------------
 
-const hamburgerIcon = document.querySelector('.hamburger-icon');
+const hamburgerIcon = document.querySelector('.nav-hamburger-menu');
 const navMenu = document.querySelector('.navigation');
 
 hamburgerIcon.addEventListener('click', () => {
