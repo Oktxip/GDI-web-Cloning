@@ -11,11 +11,18 @@ footer {
     font-size: toRem(16);
     padding: 0rem !important;
     
+    @include media-breakpoint-down(lg){
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
     @include media-breakpoint-down(md){
       grid-template-columns: repeat(2, 1fr);
       width: 91%;
       margin-bottom: toRem(162);
       grid-gap: toRem(15);
+    }
+    @include media-breakpoint-down(xs-1){
+      grid-template-columns: repeat(1, 1fr);
     }
     
     ul{
@@ -58,7 +65,7 @@ footer {
     }
   }
   
-
+  
   .footer-end{
     width: 100%;
     padding-top: toRem(24);
@@ -68,26 +75,27 @@ footer {
       padding-top: toRem(32);
       padding-bottom: toRem(50);
     }
-
-
+    
+    
     .cr{
-      display: flex;
+      display: grid;
       justify-content: space-between;
       align-items: center;
-
-      @include media-breakpoint-down(md){
-        flex-direction: column;
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      
+      @include media-breakpoint-down(lg){
+        grid-template-columns: repeat(1, 1fr);
         gap: toRem(34);
       }
       
       .cr-brand{
-        width: 27.777%;
-        justify-content: center;
+        justify-content: start;
         
         @include media-breakpoint-down(xl){
           width: 33.777%;
         }
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(lg){
           width: 100%;
           display: flex;
         }
@@ -95,34 +103,33 @@ footer {
       
       .cr-copyright{
         display: flex;
-        width: 27.777%;
         justify-content: center;
         font-size: toRem(16);
         color: #6C727F;
-
+        
         @include media-breakpoint-down(xl){
           width: 30.777%;
         }
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(lg){
           width: 100%;
         }
       }
       
       .cr-media{
         display: flex;
-        width: 27.777%;
-        justify-content: flex-end;
         
-        @include media-breakpoint-down(md){
-          width: 100%;
+        @include media-breakpoint-down(lg){
+          grid-row: 2/3;
           justify-content: center;
+          justify-content: end;
         }
         .cr-media--wrapper{
           display: flex;
           justify-content: space-between;
-          width: 82.758%;
-          @include media-breakpoint-down(md){
-            width: 100%;
+          gap: 2rem;
+
+          @include media-breakpoint-down(lg){
+            width: auto;
             justify-content: space-around;
           }
           img{

@@ -146,28 +146,37 @@
     gap: toRem(48);
   }
   .ctn-container .ctn.on {
-    display: flex;
+    display: grid;
     transition: all 1s;
-    flex-direction: row-reverse;
+    grid-template-columns: toRem(474) 1fr;
     align-items: center;
+    @include media-breakpoint-down(xxl) {
+      grid-template-columns: toRem(457) 1fr;
+    }
     @include media-breakpoint-down(xl) {
+      grid-template-columns: toRem(437) 1fr;
       align-items: center;
       gap: 2rem;
       justify-content: center;
     }
+    @include media-breakpoint-down(lg-2) {
+      grid-template-columns: toRem(417) 1fr;
+    }
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: toRem(400) 1fr;
+      padding: 0 2rem;
+    }
     @include media-breakpoint-down(md) {
-      flex-direction: column;
+      grid-template-columns: repeat(1,1fr);
     }
   }    
   .ctn-right{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @include media-breakpoint-down(xl) {
-      width: 45%;
-    }
+    grid-row:1/2 ;
     @include media-breakpoint-down(md) {
-      width: 95%;
+      grid-row:2/3 ;
     }
     
     .ctn-right-lo{
@@ -189,7 +198,6 @@
     }
 
     .ctn-right-ti{
-      width: toRem(474);
       font-weight: 700;
       color: $white;
       display: flex;
@@ -219,20 +227,37 @@
       }
     }
   }
+  
   .ctn-left{
     position: relative;
-    width: toRem(658);
-    height: toRem(454);
+    height: 100%;
+
+    .ctn-left-container{
+      width: toRem(658);
+      position: absolute;
+      top: 0;
+      @include media-breakpoint-down(md) {
+        position: relative;
+        width: 100%;
+      }
+
+      .pb{
+        padding-bottom: 68.9969%;
+      }
+      
+    }
     
     .bottom-left-path{
       position: absolute;
       bottom: 0;
       left: 0;
+      width: 36.17021276595745%;
     }
     .top-right-path{
       position: absolute;
       top: 0;
       right: 0;
+      width: 39.51367781155015%;
     }
 
     .ctn-left-img{
@@ -242,8 +267,7 @@
       bottom: 0;
       right: 0;
       margin: auto;
-      width: toRem(587.2);
-      height: toRem(367);
+      width: 89.238601832370821%;
     }
   }
 }

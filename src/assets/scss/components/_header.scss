@@ -44,7 +44,7 @@ header{
       @include media-breakpoint-down(lg){
         width: toRem(254.98);
       }
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
         z-index: 100;
       }
       img{
@@ -56,7 +56,6 @@ header{
       display: none;
       align-items: center;
       cursor: pointer;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -65,11 +64,7 @@ header{
       cursor: pointer;
       transition: all linear .4s;
       
-      
       @include media-breakpoint-down(lg){
-        display: flex;
-      }
-      @include media-breakpoint-down(md){
         z-index: 100;
         display: flex;
       }
@@ -86,6 +81,7 @@ header{
       }
     }
     
+
     .nav-hamburger-menu.active span:nth-child(1) {
       transform: rotate(45deg);
       bottom: toRem(-7);
@@ -101,6 +97,9 @@ header{
       transform: rotate(0deg);
       bottom: 0;
     }
+    .nav-hamburger-menu span:nth-child(2) {
+      opacity: 1;
+    }
     .nav-hamburger-menu span:nth-child(3) {
       transform: rotate(0deg);
       top: 0;
@@ -109,7 +108,7 @@ header{
 
 
     .navigation-active{
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
         opacity: 1 !important;
         left: 0 !important;
         background: #2979d7;
@@ -125,7 +124,7 @@ header{
         padding-left: 1.125rem;
       }
       
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
         z-index: 50;
         opacity: 0;
         flex-direction: column;
@@ -181,11 +180,14 @@ header{
         justify-content: flex-end;
         font-weight: 700;
         gap: .25rem;
-
+        
         @include media-breakpoint-down(lg){
+          gap: 1.5rem;
+          padding: 2rem;
+        }
+        @include media-breakpoint-down(md){
           flex-direction: column;
-          margin-top: 2rem;
-          width: 90%;
+          width: 100%;
         }
         .navigation-btn-login{
           transition: all linear .4s;
@@ -203,6 +205,9 @@ header{
           border: .06rem solid transparent;
           
           @include media-breakpoint-down(lg){
+            border: .06rem solid $white;
+          }
+          @include media-breakpoint-down(md){
             background: #2979d7;
             width: 100% !important;
           }
@@ -227,7 +232,7 @@ header{
           flex-grow: 0;
           border: .06rem solid transparent;
 
-          @include media-breakpoint-down(lg){
+          @include media-breakpoint-down(md){
             margin-top: 1rem;
             width: 100% !important;
           }

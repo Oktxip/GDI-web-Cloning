@@ -66,12 +66,13 @@
       grid-template-columns: repeat(3,1fr);
       gap: 2.5rem;
       
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
         grid-template-columns: repeat(1,1fr);
         align-items: center;
         width: 90%;
         gap: toRem(48);
         margin-bottom: toRem(65);
+        justify-items: center;
       } 
   
   
@@ -84,8 +85,9 @@
         height: max-content;
 
         @include media-breakpoint-down(md){
-          width: 100%;
+          max-width: toRem(400);
         }
+
         .customer-frame-content-image{
           height: toRem(193);
           .one{
@@ -133,11 +135,14 @@
         }
       }
     }
-  
+    
     .customer-frame-button{
       display: flex;
       justify-content: center;
       padding-top: toRem(66);
+      @include media-breakpoint-down(md){
+        padding-top: toRem(0);
+      }
     }
   }
 }
