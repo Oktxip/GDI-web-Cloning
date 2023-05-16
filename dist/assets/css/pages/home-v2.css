@@ -619,9 +619,17 @@ body, html {
   animation: all linear 0.2s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1399.98px) {
   .container {
-    --bs-gutter-x: 1.25rem !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 20 !important;
+    padding-right: 20 !important;
+    width: 100% !important;
   }
 }
 

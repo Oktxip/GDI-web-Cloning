@@ -1,5 +1,4 @@
 .customer{
-  // height: toRem(956);
   background-color: #F6F7FB;
   position: relative;
   padding-bottom: toRem(224);
@@ -7,13 +6,19 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   }
-  @media(max-width:480px){
+  @include media-breakpoint-down(md){
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
-      padding-bottom: toRem(56);
+      clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+      padding-bottom: toRem(90);
     }
-    
+    @include media-breakpoint-down(xs-3){
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+        padding-bottom: toRem(56);
+      }
+    }
   }
 
   .customer-bg-main{
@@ -43,7 +48,7 @@
       text-align: center;
       padding-bottom: toRem(80);
       
-      @media(max-width:480px){
+      @include media-breakpoint-down(xs-3){
         text-align: none;
         padding-bottom: toRem(48);
       }
@@ -61,8 +66,8 @@
       grid-template-columns: repeat(3,1fr);
       gap: 2.5rem;
       
-      @include media-breakpoint-down(xs-3){
-        flex-direction: column;
+      @include media-breakpoint-down(md){
+        grid-template-columns: repeat(1,1fr);
         align-items: center;
         width: 90%;
         gap: toRem(48);
@@ -78,7 +83,7 @@
         text-align: center;
         height: max-content;
 
-        @include media-breakpoint-down(xs-3){
+        @include media-breakpoint-down(md){
           width: 100%;
         }
         .customer-frame-content-image{

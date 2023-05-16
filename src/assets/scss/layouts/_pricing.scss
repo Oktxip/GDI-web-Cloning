@@ -24,7 +24,7 @@
     color: #0B0A0F;
     margin-bottom: toRem(60);
     
-    @media (max-width: 480px){
+    @include media-breakpoint-down(md){
       width: 100%;
     }
   }
@@ -37,8 +37,9 @@
     @include media-breakpoint-down(xl){
       margin: 0rem 2rem;
     }
-    @media (max-width: 480px){
+    @include media-breakpoint-down(md){
       grid-template-columns: repeat(1, 1fr);
+      width: 90%;
     }
 
     .pricing-card-w{

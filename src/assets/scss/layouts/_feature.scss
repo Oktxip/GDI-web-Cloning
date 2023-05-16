@@ -8,7 +8,7 @@
   align-items: center;
   position: relative;
   
-  @include media-breakpoint-down(xs-3) {
+  @include media-breakpoint-down(md) {
     clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: toRem(60);
   }
@@ -27,7 +27,7 @@
     color: #fff;
     margin-bottom: toRem(48);
 
-    @include media-breakpoint-down(xs-3) {
+    @include media-breakpoint-down(md) {
       width: 100%;
       width: 95%;
     }
@@ -40,7 +40,7 @@
     row-gap: toRem(16);
     align-items: center;
     grid-template-areas: "butt butt""con con";
-    @include media-breakpoint-down(xs-3) {
+    @include media-breakpoint-down(md) {
       grid-gap: toRem(0);
       padding-top: toRem(16);
       grid-template-areas: "con con""butt butt";
@@ -52,7 +52,7 @@
       display: flex;
       justify-content: center;
       grid-area: butt;
-      @include media-breakpoint-down(xs-3) {
+      @include media-breakpoint-down(md) {
         margin-top: toRem(32);
         padding-bottom: toRem(0) !important;
       }
@@ -66,7 +66,7 @@
         background: rgba(255, 255, 255, 0.1);
         padding: toRem(6) 0rem;
         
-        @include media-breakpoint-down(xs-3) {
+        @include media-breakpoint-down(md) {
           padding: toRem(6) !important;
           background-color: transparent !important;
         }
@@ -89,7 +89,7 @@
           text-align: center; 
           
           
-          @media (max-width:480px){
+          @include media-breakpoint-down(md){
             font-size: 0;
             width: toRem(10);
             height: toRem(10);
@@ -108,7 +108,7 @@
           }
   
           .mh{
-            @include media-breakpoint-down(xs-3) {
+            @include media-breakpoint-down(md) {
               display: none !important;
             }
           }
@@ -119,7 +119,7 @@
         }
   
         .button-container button:last-child {
-          @include media-breakpoint-down(xs-3) {
+          @include media-breakpoint-down(md) {
             margin-right: 0;
           }
         }
@@ -129,7 +129,7 @@
           color: #ffff;
           transition: all 1s;
   
-          @include media-breakpoint-down(xs-3) {
+          @include media-breakpoint-down(md) {
             background-color: #007bff;
           }
         }
@@ -143,6 +143,7 @@
     transition: all 1s;
     grid-area: con;
     min-height: toRem(510);
+    gap: toRem(48);
   }
   .ctn-container .ctn.on {
     display: flex;
@@ -154,7 +155,7 @@
       gap: 2rem;
       justify-content: center;
     }
-    @include media-breakpoint-down(xs-3) {
+    @include media-breakpoint-down(md) {
       flex-direction: column;
     }
   }    
@@ -165,7 +166,7 @@
     @include media-breakpoint-down(xl) {
       width: 45%;
     }
-    @include media-breakpoint-down(xs-3) {
+    @include media-breakpoint-down(md) {
       width: 95%;
     }
     
@@ -173,15 +174,15 @@
       margin-bottom: toRem(30);
       display: flex;
       text-align: left;
-      @media (max-width: 1064px) {
+      @include media-breakpoint-down(lg-2) {
         width: 20%;
       }
-      @include media-breakpoint-down(xs-3) {
+      @include media-breakpoint-down(md) {
         display: none;
       }
 
       img{
-        @media (max-width: 1064px) {
+        @include media-breakpoint-down(lg-2) {
           width: 100%;
         }
       }
@@ -194,7 +195,7 @@
       display: flex;
       text-align: left;
       
-      @include media-breakpoint-down(xs-3) {
+      @include media-breakpoint-down(md) {
         width: 100%;
         font-size: toRem(24);
         text-align: center;
@@ -219,24 +220,30 @@
     }
   }
   .ctn-left{
-    margin-left: toRem(48);
-    @include media-breakpoint-down(xl) {
-      margin-left: toRem(0);
-      width: 45%;
-    }
-    @include media-breakpoint-down(xs-3) {
-      margin: toRem(0);
-      width: 100%;
-    }
+    position: relative;
+    width: toRem(658);
+    height: toRem(454);
     
-    img{
-      @include media-breakpoint-down(xs-3) {
-        margin-left: toRem(0);
-        width: 100%;
-      }
-      @include media-breakpoint-down(xl) {
-        width: 100%;
-      }
+    .bottom-left-path{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .top-right-path{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .ctn-left-img{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: toRem(587.2);
+      height: toRem(367);
     }
   }
 }

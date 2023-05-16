@@ -9,7 +9,13 @@ body, html{
 }
 
 .container{
-  @media (max-width : 480px){
-    --bs-gutter-x: 1.25rem !important;
+  @include media-breakpoint-down(xxl){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include media-breakpoint-down(sm){
+    padding-left: 20 !important;
+    padding-right: 20 !important;
+    width: 100% !important;
   }
 }

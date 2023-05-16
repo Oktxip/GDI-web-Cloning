@@ -11,7 +11,7 @@ footer {
     font-size: toRem(16);
     padding: 0rem !important;
     
-    @include media-breakpoint-down(xs-3){
+    @include media-breakpoint-down(md){
       grid-template-columns: repeat(2, 1fr);
       width: 91%;
       margin-bottom: toRem(162);
@@ -25,7 +25,7 @@ footer {
         transition: all linear .4s;
       }
       a:hover{
-        color: blue;
+        color: #2979D7;
       }
       li:first-child{
         margin-bottom: toRem(14);
@@ -64,7 +64,7 @@ footer {
     padding-top: toRem(24);
     border-top: 2px solid #E5E6EB;
     
-    @include media-breakpoint-down(xs-3){
+    @include media-breakpoint-down(md){
       padding-top: toRem(32);
       padding-bottom: toRem(50);
     }
@@ -75,7 +75,7 @@ footer {
       justify-content: space-between;
       align-items: center;
 
-      @include media-breakpoint-down(xs-3){
+      @include media-breakpoint-down(md){
         flex-direction: column;
         gap: toRem(34);
       }
@@ -87,7 +87,7 @@ footer {
         @include media-breakpoint-down(xl){
           width: 33.777%;
         }
-        @include media-breakpoint-down(xs-3){
+        @include media-breakpoint-down(md){
           width: 100%;
           display: flex;
         }
@@ -103,7 +103,7 @@ footer {
         @include media-breakpoint-down(xl){
           width: 30.777%;
         }
-        @include media-breakpoint-down(xs-3){
+        @include media-breakpoint-down(md){
           width: 100%;
         }
       }
@@ -113,7 +113,7 @@ footer {
         width: 27.777%;
         justify-content: flex-end;
         
-        @include media-breakpoint-down(xs-3){
+        @include media-breakpoint-down(md){
           width: 100%;
           justify-content: center;
         }
@@ -121,7 +121,7 @@ footer {
           display: flex;
           justify-content: space-between;
           width: 82.758%;
-          @include media-breakpoint-down(xs-3){
+          @include media-breakpoint-down(md){
             width: 100%;
             justify-content: space-around;
           }

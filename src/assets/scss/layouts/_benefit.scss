@@ -5,29 +5,30 @@
   justify-content: center;
   padding-top: toRem(270);
   padding-bottom: toRem(0.1);
+
   
-  @include media-breakpoint-down(xs-3){
+  @include media-breakpoint-down(md){
     clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: toRem(116);
   }
 
   .benefit-content1{
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 94.236%;
-    left: toRem(140);
+    display: grid;
+    grid-template-columns: toRem(487) 1fr;
+    column-gap: toRem(124);
     padding-top: toRem(36.62);
     
-    @include media-breakpoint-down(xs-3){
+    @include media-breakpoint-down(md){
       width: 100%;
-      flex-direction: column-reverse;
+      display: flex;
+      flex-direction: column;
       left: 0rem;
+      gap: 2rem;
     }
     
     .benefit-content1-left{
-      width: 35%;
-      @include media-breakpoint-down(xs-3){
+      @include media-breakpoint-down(md){
         width: 100%;
         display: flex;
         text-align: center;
@@ -41,7 +42,7 @@
         letter-spacing: -0.01em;
         color: $white;
         padding-bottom: toRem(24);
-        @include media-breakpoint-down(xs-3){
+        @include media-breakpoint-down(md){
           padding-top: 0rem;
           padding-bottom: toRem(24);
         }
@@ -59,20 +60,16 @@
     .benefit-content1-right{
       width: 54.584%;
 
-      @include media-breakpoint-down(xs-3){
+      @include media-breakpoint-down(md){
         width: 100%;
       }
 
       img{
         position: relative;
         right: toRem(42.857);
-
-        @include media-breakpoint-down(xl){
-          width: 130%;
-        }
-        @include media-breakpoint-down(xs-3){
-          right: 0rem;
+        @include media-breakpoint-down(md){
           width: 100%;
+          right: toRem(0);
         }
       }
     }
@@ -83,26 +80,22 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 94.236%;
-    left: toRem(-140);
+    column-gap: toRem(48);
     padding-top: toRem(36.62);
-    flex-direction: row-reverse;
 
     @include media-breakpoint-down(xl){
       margin-bottom: toRem(100);
     }
-    @include media-breakpoint-down(xs-3){
-      width: 100%;
+    @include media-breakpoint-down(md){
       flex-direction: column-reverse;
-      left: toRem(0);
       margin-bottom: toRem(55);
+      gap: 2rem;
     }
     
     .benefit-content2-left{
-      width: 35.887%;
       position: relative;
-      left: toRem(110);
-      @include media-breakpoint-down(xs-3){
+      width: toRem(496);
+      @include media-breakpoint-down(md){
         width: 100%;
         left: 0rem;
         display: flex;
@@ -119,7 +112,7 @@
         letter-spacing: -0.01em;
         color: $white;
         padding-bottom: toRem(24);
-        @include media-breakpoint-down(xs-3){
+        @include media-breakpoint-down(md){
           padding-top: toRem(0);
         }
       }
@@ -131,24 +124,21 @@
         padding-bottom: toRem(48);
       }
     }
-
     
     .benefit-content2-right{
-      width: 54.584%;
-      @include media-breakpoint-down(xs-3){
-        width: 100%;
-      }
-      
-      img{
-        position: relative;
-        right: 0.578562rem;
+      position: relative;
+      display: block;
+      flex: 1;
 
-        @include media-breakpoint-down(xl){
-          width: 130%;
-        }
-        @include media-breakpoint-down(xs-3){
-          right: 0.578562rem;
-          width: 100%;
+      .benefit-content2-right-image{
+        height: toRem(618.34);
+        img{
+          position: absolute;
+          right: 0;
+          @include media-breakpoint-down(md){
+            position: relative;
+            width: 100%;
+          }
         }
       }
     }

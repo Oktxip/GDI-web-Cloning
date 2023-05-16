@@ -14,8 +14,16 @@ header{
   flex: 1;
   z-index: 101;
   width: 100%;
-  
-  
+
+  .container--nav{
+    @include media-breakpoint-down(xxl){
+      padding: 0 toRem(56) !important;
+      max-width: 100%;
+    }
+    @include media-breakpoint-down(xl){
+      padding: 0 toRem(24) !important;
+    }
+  }
   .nav{
     padding-right: toRem(2);
     display: flex;
@@ -28,8 +36,20 @@ header{
     }
 
     .nav-brand{
-      img{
+      @include media-breakpoint-up(xl){
         width: toRem(254.98);
+      }
+      @include media-breakpoint-down(xl){
+        width: toRem(230);
+      }
+      @include media-breakpoint-down(lg-2){
+        width: toRem(200);
+      }
+      @include media-breakpoint-down(lg){
+        width: toRem(254.98);
+      }
+      img{
+        width: 100%;
       }
     }
     
