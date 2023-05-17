@@ -37,9 +37,19 @@
     @include media-breakpoint-down(xl){
       margin: 0rem 2rem;
     }
+    @include media-breakpoint-down(lg-2){
+      max-width: toRem(680);
+      width: 100%;
+    }
     @include media-breakpoint-down(lg){
       grid-template-columns: repeat(1, 1fr);
-      width: 90%;
+      max-width: toRem(500);
+      width: 100%;
+      align-items: center;
+    }
+    @include media-breakpoint-down(sm){
+      max-width: toRem(480);
+      width: 95.83333333333333%;
     }
 
     .pricing-card-w{

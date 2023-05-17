@@ -39,15 +39,23 @@
   }
 
 
-  .insight-c{
+  .insight-container{
     padding-bottom: toRem(56);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: toRem(30);
     
-    @include media-breakpoint-down(md){
+
+    @include media-breakpoint-down(xl){
+      max-width: toRem(960);
+    }
+    @include media-breakpoint-down(lg-2){
+      max-width: toRem(920);
+    }
+    @include media-breakpoint-down(lg){
       width: 90%;
       grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
       grid-gap: toRem(30);
       align-items: center;
       padding: 3rem toRem(20) 0rem;
@@ -57,17 +65,22 @@
       padding: toRem(50) toRem(50) toRem(0) ;
       background-color: #F6F7FB;
       
-      @include media-breakpoint-down(xl){
-        padding: toRem(20) toRem(20) toRem(0) ;
-      }
       
-      @include media-breakpoint-down(md){
-        padding: toRem(50) toRem(50) toRem(0) ;
+      @include media-breakpoint-down(xl){
+        padding: toRem(50) toRem(20) toRem(0) ;
+        max-width: toRem(680);
+      }
+      @include media-breakpoint-down(lg-2){
+        max-width: toRem(500);
+      }
+
+      @include media-breakpoint-down(lg){
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        max-width: max-content;
       }
       
       .insight-card-tittle{
@@ -77,35 +90,49 @@
         @include media-breakpoint-down(xl){
           width: toRem(390);
         }
-        @include media-breakpoint-down(md){
-          width: auto;
-        }
-      }
-      li{
-        list-style-type: none;
-        width: toRem(466);
-        font-weight: 400;
-        font-size: toRem(18);
-        line-height: toRem(28);
-        color: #394150;
-        margin: toRem(24) 0rem;
-        display: flex;
-        align-items: center;
-        @include media-breakpoint-down(xl){
-          width: toRem(390);
+        @include media-breakpoint-down(lg){
+          text-align: center;
         }
         @include media-breakpoint-down(md){
           width: auto;
         }
-        img{
-          margin-top: 0rem !important;
-          margin-right: toRem(16);
-        }
       }
-      .card-img{
-        margin-top: toRem(32);
-        @include media-breakpoint-down(xl){
-          width: toRem(390);
+      .insight-card-ceklist{
+        text-align: start;
+        width: 100%;
+        li{
+          list-style-type: none;
+          width: toRem(466);
+          font-weight: 400;
+          font-size: toRem(18);
+          line-height: toRem(28);
+          color: #394150;
+          margin: toRem(24) 0rem;
+          display: flex;
+
+          @include media-breakpoint-down(xl){
+            width: toRem(390);
+          }
+          @include media-breakpoint-down(lg){
+            text-align: start;
+            align-items: center;
+          }
+          @include media-breakpoint-down(md){
+            width: auto;
+          }
+          img{
+            margin-top: 0rem !important;
+            margin-right: toRem(16);
+          }
+        }
+        .card-img{
+          margin-top: toRem(32);
+          @include media-breakpoint-down(xl){
+            width: toRem(390);
+          }
+          @include media-breakpoint-down(lg){
+            width: 100%;
+          }
         }
       }
     }

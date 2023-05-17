@@ -21,7 +21,7 @@ footer {
       margin-bottom: toRem(162);
       grid-gap: toRem(15);
     }
-    @include media-breakpoint-down(xs-1){
+    @include media-breakpoint-down(xs-3){
       grid-template-columns: repeat(1, 1fr);
     }
     
@@ -51,16 +51,24 @@ footer {
     margin-bottom: toRem(65);
     list-style-type: none;
 
-
+    @include media-breakpoint-down(xs-3){
+      width: 100%;
+      padding: 0rem 2rem;
+    }
+    
     .footer-mid-text{
       list-style-type: none;
       margin-bottom: toRem(14);
+      @include media-breakpoint-down(xs-3){
+        width: 100%;
+      }
     }
-
+    
     .footer-mid-brand{
-
-      a:last-child{
-        padding-left: toRem(24);
+      gap: toRem(24);
+      
+      @include media-breakpoint-down(xs-3){
+        width: 100%;
       }
     }
   }
@@ -98,6 +106,7 @@ footer {
         @include media-breakpoint-down(lg){
           width: 100%;
           display: flex;
+          justify-content: center;
         }
       }
       

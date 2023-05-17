@@ -27,6 +27,11 @@
         text-align: center;
       }
   
+      .top-tier-left-text{
+        @include media-breakpoint-down(xs-3){
+          padding: 0rem toRem(20);
+        }
+      }
       .top-tier-left-user{
         width: toRem(128);
         margin-bottom: toRem(30);

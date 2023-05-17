@@ -38,6 +38,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: toRem(16);
+    justify-items: center;
     align-items: center;
     grid-template-areas: "butt butt""con con";
     @include media-breakpoint-down(md) {
@@ -48,7 +49,7 @@
     }
     
     .button-con{
-      width: 100%;
+      max-width: toRem(786);
       display: flex;
       justify-content: center;
       grid-area: butt;
@@ -58,7 +59,8 @@
       }
 
       .button-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
         flex-wrap : wrap; 
         justify-content: center;
         margin-bottom: toRem(64);
@@ -144,6 +146,9 @@
     grid-area: con;
     min-height: toRem(510);
     gap: toRem(48);
+  }
+  .ctn-container{
+    width: 100%;
   }
   .ctn-container .ctn.on {
     display: grid;
