@@ -39,13 +39,15 @@ header{
         width: toRem(230);
       }
       @include media-breakpoint-down(lg-2){
-        width: toRem(200);
       }
       @include media-breakpoint-down(lg){
         width: toRem(254.98);
       }
       @include media-breakpoint-down(lg){
         z-index: 100;
+      }
+      @include media-breakpoint-down(xs-2){
+        width: toRem(200);
       }
       img{
         width: 100%;
@@ -125,10 +127,10 @@ header{
       }
       
       @include media-breakpoint-down(lg){
+        justify-content: start;
         z-index: 50;
         opacity: 0;
         flex-direction: column;
-        align-items: center;
         position: absolute;
         width: 100%;
         top: 4rem;
@@ -140,7 +142,6 @@ header{
         height: 100vh;
         padding: toRem(90) toRem(32) toRem(20);
         transition: all linear 1s;
-        
       }
       
       
@@ -150,7 +151,7 @@ header{
         justify-content: space-between;
         width: 53.875%;
         align-items: center;
-
+        
         @include media-breakpoint-down(xl){
           width: 100%;
           flex: 1;
@@ -158,7 +159,9 @@ header{
         
         @include media-breakpoint-down(lg){
           flex-direction: column;
-          gap: toRem(5);
+          gap: 1rem;
+          flex: none;
+          align-items: start;
         }
         .navigation-link-button{
           font-weight: 700;
@@ -183,11 +186,13 @@ header{
         
         @include media-breakpoint-down(lg){
           gap: 1.5rem;
-          padding: 2rem;
+          justify-content: start;
+          margin: 1.5rem 0rem;
         }
         @include media-breakpoint-down(md){
           flex-direction: column;
           width: 100%;
+          gap: 0;
         }
         .navigation-btn-login{
           transition: all linear .4s;
@@ -214,6 +219,10 @@ header{
         }
         .navigation-btn-login:hover{
           border: .06rem solid $white;
+          @include media-breakpoint-down(lg){
+            background-color: $white;
+            color: #2979d7;
+          }
         }
         .navigation-btn__sign{
           transition: all linear .4s;

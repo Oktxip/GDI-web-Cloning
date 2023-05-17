@@ -21986,11 +21986,6 @@ header .nav {
     width: 14.375rem;
   }
 }
-@media (max-width: 1063.98px) {
-  header .nav .nav-brand {
-    width: 12.5rem;
-  }
-}
 @media (max-width: 991.98px) {
   header .nav .nav-brand {
     width: 15.93625rem;
@@ -21999,6 +21994,11 @@ header .nav {
 @media (max-width: 991.98px) {
   header .nav .nav-brand {
     z-index: 100;
+  }
+}
+@media (max-width: 374.98px) {
+  header .nav .nav-brand {
+    width: 12.5rem;
   }
 }
 header .nav .nav-brand img {
@@ -22073,10 +22073,10 @@ header .nav .navigation {
 }
 @media (max-width: 991.98px) {
   header .nav .navigation {
+    justify-content: start;
     z-index: 50;
     opacity: 0;
     flex-direction: column;
-    align-items: center;
     position: absolute;
     width: 100%;
     top: 4rem;
@@ -22105,7 +22105,9 @@ header .nav .navigation .navigation-link {
 @media (max-width: 991.98px) {
   header .nav .navigation .navigation-link {
     flex-direction: column;
-    gap: 0.3125rem;
+    gap: 1rem;
+    flex: none;
+    align-items: start;
   }
 }
 header .nav .navigation .navigation-link .navigation-link-button {
@@ -22131,13 +22133,15 @@ header .nav .navigation .navigation-btn {
 @media (max-width: 991.98px) {
   header .nav .navigation .navigation-btn {
     gap: 1.5rem;
-    padding: 2rem;
+    justify-content: start;
+    margin: 1.5rem 0rem;
   }
 }
 @media (max-width: 767.98px) {
   header .nav .navigation .navigation-btn {
     flex-direction: column;
     width: 100%;
+    gap: 0;
   }
 }
 header .nav .navigation .navigation-btn .navigation-btn-login {
@@ -22168,6 +22172,12 @@ header .nav .navigation .navigation-btn .navigation-btn-login {
 }
 header .nav .navigation .navigation-btn .navigation-btn-login:hover {
   border: 0.06rem solid #FFFFFF;
+}
+@media (max-width: 991.98px) {
+  header .nav .navigation .navigation-btn .navigation-btn-login:hover {
+    background-color: #FFFFFF;
+    color: #2979d7;
+  }
 }
 header .nav .navigation .navigation-btn .navigation-btn__sign {
   transition: all linear 0.4s;
