@@ -37,31 +37,50 @@
     @include media-breakpoint-down(xl){
       margin: 0rem 2rem;
     }
-    @include media-breakpoint-down(lg-2){
-      max-width: toRem(680);
-      width: 100%;
-    }
     @include media-breakpoint-down(lg){
       grid-template-columns: repeat(1, 1fr);
-      max-width: toRem(500);
       width: 100%;
-      align-items: center;
+      justify-items: center;
     }
     @include media-breakpoint-down(sm){
-      max-width: toRem(480);
-      width: 95.83333333333333%;
+      width: 100%;
+      padding: 0rem toRem(20);
+    }
+    @include media-breakpoint-down(xs-3){
+      padding: 0rem toRem(18);
+    }
+    @include media-breakpoint-down(xs-2){
+      padding: 0rem toRem(15);
+    }
+    @include media-breakpoint-down(xs-1){
+      padding: 0rem toRem(12);
     }
 
     .pricing-card-w{
+      width: toRem(367);
       border: 1px solid #E5E6EB;
       padding: toRem(48) toRem(32) toRem(32) toRem(32);
-      width: toRem(367);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
+      
+      @include media-breakpoint-down(xxl){
+        width: toRem(360);
+      }
       @include media-breakpoint-down(xl){
-        width: auto;
+        width: toRem(300);
+      }
+      @include media-breakpoint-down(lg-2){
+        width: toRem(290);
+      }
+      @include media-breakpoint-down(lg){
+        width: toRem(680);
+      }
+      @include media-breakpoint-down(md){
+        width: toRem(500);
+      }
+      @include media-breakpoint-down(sm){
+        width: 100%;
       }
       
       .pricing-card-w-top{
@@ -119,7 +138,6 @@
       }
     }
     
-    
     .pricing-card-b{
       padding: toRem(48) toRem(32) toRem(32) toRem(32);
       background-color: #00326D;
@@ -128,6 +146,27 @@
       flex-direction: column;
       justify-content: space-between;
       position: relative;
+      width: toRem(367);
+
+      @include media-breakpoint-down(xxl){
+        width: toRem(360);
+      }
+      @include media-breakpoint-down(xl){
+        width: toRem(300);
+      }
+      @include media-breakpoint-down(lg-2){
+        width: toRem(290);
+      }
+      @include media-breakpoint-down(lg){
+        width: toRem(680);
+      }
+      @include media-breakpoint-down(md){
+        width: toRem(500);
+      }
+      @include media-breakpoint-down(sm){
+        width: 100%;
+      }
+
 
       .recom{
         position: absolute;

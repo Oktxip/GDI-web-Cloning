@@ -94,6 +94,9 @@
         @include media-breakpoint-down(xs-3){
           padding: 0rem toRem(20);
         }
+        @include media-breakpoint-down(xs-2){
+          padding: 0rem 0rem;
+        }
 
         .customer-frame-content-image{
           height: toRem(193);

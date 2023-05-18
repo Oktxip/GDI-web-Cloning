@@ -2,6 +2,7 @@
   margin-top: toRem(120);
   position: relative;
   overflow-y: hidden;
+  border-radius: 0.3125rem;
   
   .cta-gradient{
     background: radial-gradient(circle, rgba(44,163,201,1) 0%, #63b7a3 12%, rgba(80,139,226,1) 100%);

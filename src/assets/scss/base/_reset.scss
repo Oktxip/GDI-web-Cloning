@@ -9,13 +9,19 @@ body, html{
 }
 
 .container{
-  @include media-breakpoint-down(xxl){
-    padding-left: 0;
-    padding-right: 0;
-  }
   @include media-breakpoint-down(sm){
-    padding-left: 20 !important;
-    padding-right: 20 !important;
     width: 100% !important;
+  }
+  @include media-breakpoint-down(xxl){
+    @include media-breakpoint-up(md){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @include media-breakpoint-down(md){
+    @include media-breakpoint-up(xs){
+      padding-left: toRem(20);
+      padding-right: toRem(20);
+    }
   }
 }

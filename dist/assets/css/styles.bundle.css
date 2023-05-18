@@ -620,17 +620,21 @@ body, html {
   animation: all linear 0.2s;
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 575.98px) {
+  .container {
+    width: 100% !important;
+  }
+}
+@media (max-width: 1399.98px) and (min-width: 768px) {
   .container {
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .container {
-    padding-left: 20 !important;
-    padding-right: 20 !important;
-    width: 100% !important;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -20325,10 +20329,27 @@ textarea.form-control-lg {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8.485rem;
-  gap: 2rem;
+  gap: 6rem;
+}
+@media (max-width: 1399.98px) {
+  .her .hero {
+    gap: 5rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .her .hero {
+    gap: 4rem;
+  }
+}
+@media (max-width: 1063.98px) {
+  .her .hero {
+    gap: 3rem;
+    padding: 0 2rem;
+  }
 }
 @media (max-width: 991.98px) {
   .her .hero {
+    gap: 2rem;
     padding: 0 2rem;
   }
 }
@@ -20451,6 +20472,11 @@ textarea.form-control-lg {
 @media (max-width: 767.98px) {
   .her .hero .hero-left .hero-left-icon .hero-left-icon-brand {
     margin-top: 2rem;
+  }
+}
+@media (max-width: 374.98px) {
+  .her .hero .hero-left .hero-left-icon .hero-left-icon-brand {
+    width: 100%;
   }
 }
 .her .hero .hero-right {
@@ -20594,6 +20620,11 @@ textarea.form-control-lg {
   padding-left: 2.75rem;
   margin-top: 0.9375rem;
 }
+@media (max-width: 1199.98px) {
+  .top .top-tier .top-tier-right {
+    padding-left: 0;
+  }
+}
 @media (max-width: 767.98px) {
   .top .top-tier .top-tier-right {
     width: 100%;
@@ -20735,6 +20766,11 @@ textarea.form-control-lg {
 @media (max-width: 479.98px) {
   .customer .customer-frame .customer-frame-con .customer-frame-content {
     padding: 0rem 1.25rem;
+  }
+}
+@media (max-width: 374.98px) {
+  .customer .customer-frame .customer-frame-con .customer-frame-content {
+    padding: 0rem 0rem;
   }
 }
 .customer .customer-frame .customer-frame-con .customer-frame-content .customer-frame-content-image {
@@ -20904,6 +20940,7 @@ textarea.form-control-lg {
 @media (max-width: 991.98px) {
   .company .company-cont .company-content .company-content-right .company-content-right1 {
     display: contents;
+    text-align: center;
   }
 }
 .company .company-cont .company-content .company-content-right .company-content-right2 {
@@ -21701,6 +21738,11 @@ textarea.form-control-lg {
   width: 64.6875rem;
   justify-content: space-between;
 }
+@media (max-width: 1063.98px) {
+  .review .container-carousel .carousel-arrows {
+    width: 52.5rem;
+  }
+}
 @media (max-width: 991.98px) {
   .review .container-carousel .carousel-arrows {
     display: none;
@@ -21756,37 +21798,70 @@ textarea.form-control-lg {
     margin: 0rem 2rem;
   }
 }
-@media (max-width: 1063.98px) {
-  .pricing .pricing-card {
-    max-width: 42.5rem;
-    width: 100%;
-  }
-}
 @media (max-width: 991.98px) {
   .pricing .pricing-card {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 31.25rem;
     width: 100%;
-    align-items: center;
+    justify-items: center;
   }
 }
 @media (max-width: 575.98px) {
   .pricing .pricing-card {
-    max-width: 30rem;
-    width: 95.8333333333%;
+    width: 100%;
+    padding: 0rem 1.25rem;
+  }
+}
+@media (max-width: 479.98px) {
+  .pricing .pricing-card {
+    padding: 0rem 1.125rem;
+  }
+}
+@media (max-width: 374.98px) {
+  .pricing .pricing-card {
+    padding: 0rem 0.9375rem;
+  }
+}
+@media (max-width: 319.98px) {
+  .pricing .pricing-card {
+    padding: 0rem 0.75rem;
   }
 }
 .pricing .pricing-card .pricing-card-w {
+  width: 22.9375rem;
   border: 1px solid #E5E6EB;
   padding: 3rem 2rem 2rem 2rem;
-  width: 22.9375rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 1399.98px) {
+  .pricing .pricing-card .pricing-card-w {
+    width: 22.5rem;
+  }
+}
 @media (max-width: 1199.98px) {
   .pricing .pricing-card .pricing-card-w {
-    width: auto;
+    width: 18.75rem;
+  }
+}
+@media (max-width: 1063.98px) {
+  .pricing .pricing-card .pricing-card-w {
+    width: 18.125rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .pricing .pricing-card .pricing-card-w {
+    width: 42.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .pricing .pricing-card .pricing-card-w {
+    width: 31.25rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .pricing .pricing-card .pricing-card-w {
+    width: 100%;
   }
 }
 .pricing .pricing-card .pricing-card-w .pricing-card-w-top {
@@ -21846,6 +21921,37 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  width: 22.9375rem;
+}
+@media (max-width: 1399.98px) {
+  .pricing .pricing-card .pricing-card-b {
+    width: 22.5rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .pricing .pricing-card .pricing-card-b {
+    width: 18.75rem;
+  }
+}
+@media (max-width: 1063.98px) {
+  .pricing .pricing-card .pricing-card-b {
+    width: 18.125rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .pricing .pricing-card .pricing-card-b {
+    width: 42.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .pricing .pricing-card .pricing-card-b {
+    width: 31.25rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .pricing .pricing-card .pricing-card-b {
+    width: 100%;
+  }
 }
 .pricing .pricing-card .pricing-card-b .recom {
   position: absolute;
@@ -21913,6 +22019,7 @@ textarea.form-control-lg {
   margin-top: 7.5rem;
   position: relative;
   overflow-y: hidden;
+  border-radius: 0.3125rem;
 }
 .cta .cta-gradient {
   background: radial-gradient(circle, rgb(44, 163, 201) 0%, #63b7a3 12%, rgb(80, 139, 226) 100%);
@@ -22466,11 +22573,6 @@ footer .footer-end .cr {
 footer .footer-end .cr .cr-brand {
   justify-content: start;
 }
-@media (max-width: 1199.98px) {
-  footer .footer-end .cr .cr-brand {
-    width: 33.777%;
-  }
-}
 @media (max-width: 991.98px) {
   footer .footer-end .cr .cr-brand {
     width: 100%;
@@ -22483,16 +22585,6 @@ footer .footer-end .cr .cr-copyright {
   justify-content: center;
   font-size: 1rem;
   color: #6C727F;
-}
-@media (max-width: 1199.98px) {
-  footer .footer-end .cr .cr-copyright {
-    width: 30.777%;
-  }
-}
-@media (max-width: 991.98px) {
-  footer .footer-end .cr .cr-copyright {
-    width: 100%;
-  }
 }
 footer .footer-end .cr .cr-media {
   display: flex;

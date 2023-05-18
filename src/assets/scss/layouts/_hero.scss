@@ -81,10 +81,21 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: toRem(135.76);
-    gap: 2rem;
-
-
+    gap: 6rem;
+    
+    @include media-breakpoint-down(xxl){
+      gap: 5rem;
+    }
+    @include media-breakpoint-down(xl){
+      gap: 4rem;
+    }
+    
+    @include media-breakpoint-down(lg-2){
+      gap: 3rem;
+      padding: 0 2rem; 
+    }
     @include media-breakpoint-down(lg){
+      gap: 2rem;
       padding: 0 2rem; 
     }
     
@@ -193,6 +204,9 @@
           margin-top: toRem(64);
           @include media-breakpoint-down(md) {
             margin-top: toRem(32);
+          }
+          @include media-breakpoint-down(xs-2) {
+            width: 100%;
           }
         }
       }

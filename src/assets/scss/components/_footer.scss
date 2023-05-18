@@ -66,7 +66,7 @@ footer {
     
     .footer-mid-brand{
       gap: toRem(24);
-      
+
       @include media-breakpoint-down(xs-3){
         width: 100%;
       }
@@ -100,9 +100,6 @@ footer {
       .cr-brand{
         justify-content: start;
         
-        @include media-breakpoint-down(xl){
-          width: 33.777%;
-        }
         @include media-breakpoint-down(lg){
           width: 100%;
           display: flex;
@@ -116,12 +113,6 @@ footer {
         font-size: toRem(16);
         color: #6C727F;
         
-        @include media-breakpoint-down(xl){
-          width: 30.777%;
-        }
-        @include media-breakpoint-down(lg){
-          width: 100%;
-        }
       }
       
       .cr-media{
