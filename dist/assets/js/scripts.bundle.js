@@ -8504,7 +8504,7 @@ document.querySelector('.nav-hamburger-menu').addEventListener('click', function
   this.classList.toggle('active');
 });
 
-
+AOS.init();
 // navbar scrolled ---------------------------------------------------------
 
 window.addEventListener('scroll', function () {
