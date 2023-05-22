@@ -1,5 +1,6 @@
 .top{
-  .top-tier{
+  overflow-x: hidden;
+  .top--container{
     margin-top: toRem(79);
     display: flex;
     justify-content: space-between;
@@ -12,9 +13,12 @@
       flex-direction: column;
     }
     
-    .top-tier-left{
+    .top-left{
       width: toRem(388);
+      display: grid;
+      gap: toRem(30);
       
+
       @include media-breakpoint-down(xl){
         width: toRem(356);
       }
@@ -27,24 +31,52 @@
         text-align: center;
       }
   
-      .top-tier-left-text{
+      .top-desc{
+        @include bodylarge-bold;
+        @include media-breakpoint-down(md){
+          @include bodynormal-bold;
+        }
         @include media-breakpoint-down(xs-3){
           padding: 0rem toRem(20);
         }
       }
-      .top-tier-left-user{
-        width: toRem(128);
-        margin-bottom: toRem(30);
+      .top-trusted{
+        display: flex;
+        align-items: center;
+        position: relative;
+        @include media-breakpoint-up(md){
+          left: toRem(-20);
+        }
+        .trusted{
+          position: relative;
+          border: toRem(2) solid $white;
+          border-radius: 50%;
+          width: toRem(56);
+          height: toRem(56);
+        }
+
+        .trusted--1{
+          right: toRem(-20);
+          z-index: 1;
+        }
+        .trusted--2{
+          z-index: 2;
+        }
+        .trusted--3{
+          left: toRem(-20);
+          z-index: 3;
+        }
       }
     }
-    .top-tier-right{
+    .top-right{
       flex: 1;
       padding-left: toRem(44);
       margin-top: toRem(15);
-
+      
       @include media-breakpoint-down(xl){
         padding-left: 0;
       }
+      
       @include media-breakpoint-down(md){
         width: 100%;
         display: flex;
@@ -52,16 +84,21 @@
         padding: 0;
       }
       
-      .top-tier-right-text{
+      .top-tittle{
         color: #394150;
         padding-bottom: toRem(32);
+
+        @include bodylarge-bold;
+        @include media-breakpoint-down(md){
+          @include bodynormal-bold;
+        }
 
         @include media-breakpoint-down(md){
           text-align: center;
         }
       }
       
-      .top-tier-right-brand{
+      .top-brand{
         border-top: 1px solid #E5E6EB;
         display: flex;
         display: flex;

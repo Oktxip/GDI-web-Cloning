@@ -16,11 +16,13 @@ $(document).ready(function () {
 })
 // nabar hamburger effect -------------------------------------------------
 
-document.querySelector('.nav-hamburger-menu').addEventListener('click', function() {
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
   this.classList.toggle('active');
 });
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 // navbar scrolled ---------------------------------------------------------
 
 window.addEventListener('scroll', function () {
@@ -37,7 +39,7 @@ window.addEventListener('scroll', function () {
 
 // hamburger navigation ---------------------------------------------------------
 
-const hamburgerIcon = document.querySelector('.nav-hamburger-menu');
+const hamburgerIcon = document.querySelector('.hamburger-menu');
 const navMenu = document.querySelector('.navigation');
 
 hamburgerIcon.addEventListener('click', () => {
@@ -70,6 +72,10 @@ function showContent(contentId) {
 
 
 // slick slider -------------------------------------------------------------
+$(window).resize(function(){
+  $('.carousel')[0].slick.refresh();
+});
+
 $(document).ready(function () {
   $('.carousel').slick({
     arrows: true,
@@ -80,5 +86,38 @@ $(document).ready(function () {
     nextArrow:'<button class="next"><img src="assets/media/images/chevron-right.svg"></button>'
   });
 });
-// sidebar slider ----------------------------------------------------------
 
+
+// sticky company funcion ----------------------------------------------------------
+
+function addSelectedClassOnScroll(PrimaryRight, divClass) {
+  window.addEventListener('scroll', function() {
+    var primaryRightElements = document.getElementsByClassName(PrimaryRight);
+    var divElements = document.getElementsByClassName(divClass);
+
+    for (var i = 0; i < primaryRightElements.length; i++) {
+      var primaryRightElement = primaryRightElements[i];
+      var primaryRightTop = primaryRightElement.getBoundingClientRect().top;
+      var primaryRightBottom = primaryRightElement.getBoundingClientRect().bottom;
+
+      function removeSelectedClass() {
+        var selectedElements = document.querySelectorAll('.selected');
+        selectedElements.forEach(function(element) {
+          element.classList.remove('selected');
+        });
+      }
+
+      if (primaryRightTop >= 0 && primaryRightBottom <= window.innerHeight) {
+        for (var j = 0; j < divElements.length; j++) {
+          removeSelectedClass();
+          divElements[j].classList.add('selected');
+        }
+      }
+    }
+  });
+}
+
+// penggunaan:
+addSelectedClassOnScroll('primary-right', 'js-box-primary');
+addSelectedClassOnScroll('second-right', 'js-box-second');
+addSelectedClassOnScroll('third-right', 'js-box-third');

@@ -3,9 +3,8 @@
   padding: 0;
 }
 body, html{
-  overflow-x: hidden !important;
   scroll-behavior: smooth !important;
-  animation: all linear .2s;
+  animation: all linear .2s;  
 }
 
 .container{
@@ -20,8 +19,12 @@ body, html{
   }
   @include media-breakpoint-down(md){
     @include media-breakpoint-up(xs){
-      padding-left: toRem(20);
-      padding-right: toRem(20);
+      padding-left: toRem(20) !important;
+      padding-right: toRem(20) !important;
     }
   }
+}
+
+ul{
+  padding: 0;
 }

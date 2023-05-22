@@ -614,7 +614,6 @@ progress {
 }
 
 body, html {
-  overflow-x: hidden !important;
   scroll-behavior: smooth !important;
   animation: all linear 0.2s;
 }
@@ -632,13 +631,13 @@ body, html {
 }
 @media (max-width: 767.98px) {
   .container {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 }
 
-.nav a {
-  color: white;
+ul {
+  padding: 0;
 }
 
 /*# sourceMappingURL=home-v2.css.map*/

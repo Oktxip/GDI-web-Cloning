@@ -7,6 +7,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  overflow-x: hidden;
 
   .b-btn{
     width: 100% !important;
@@ -15,7 +16,7 @@
     width: 100% !important;
   }
 
-  .pricing-tittle{
+  .pricing__header{
     width: toRem(674);
     font-style: normal;
     font-weight: 800;
@@ -29,7 +30,7 @@
     }
   }
 
-  .pricing-card{
+  .pricing__card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: toRem(30);
@@ -56,13 +57,15 @@
       padding: 0rem toRem(12);
     }
 
-    .pricing-card-w{
+
+
+    .content-card{
       width: toRem(367);
-      border: 1px solid #E5E6EB;
       padding: toRem(48) toRem(32) toRem(32) toRem(32);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
       
       @include media-breakpoint-down(xxl){
         width: toRem(360);
@@ -83,43 +86,39 @@
         width: 100%;
       }
       
-      .pricing-card-w-top{
+      .pricing__content{
         list-style-type: none;
   
-        .pricing-card-w-top-head{
+        .pricing__bid{
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           padding-bottom: toRem(28);
-          border-bottom: 1px solid #E5E6EB;
   
-          .pricing-card-w-top-head-tittle{
+          .pricing__tittle{
             margin-bottom: toRem(16);
             font-style: normal;
             font-weight: 700;
             font-size: toRem(28);
             line-height: toRem(42);
-            color: #0B0A0F;
           }
-          .pricing-card-w-top-head-price{
+          .pricing__price{
             font-style: normal;
             font-weight: 800;
             font-size: toRem(48);
             line-height: toRem(64);
             letter-spacing: -0.01em;
-            color: #0B0A0F;
             span{
               padding-left: toRem(8);
               font-style: normal;
               font-weight: 400;
               font-size: toRem(18);
               line-height: toRem(28);
-              color: #9EA3AE;
             }
           }
         }
         
-        .pricing-card-w-top-check{
+        .pricing__list{
           padding-left: toRem(6);
           margin-top: toRem(22);
           margin-bottom: toRem(24);
@@ -132,41 +131,36 @@
           }
         }
         
-        .pricing-card-w-btn{
+        .pricing-w-btn{
           width: 100%;
         }
       }
     }
+
+    .white__card{
+      border: 1px solid #E5E6EB;
+      
+      .pricing-content{
+  
+        .pricing__bid{
+          border-bottom: 1px solid #E5E6EB;
+  
+          .pricing__tittle{
+            color: #0B0A0F;
+          }
+          .pricing__price{
+            color: #0B0A0F;
+            span{
+              color: #9EA3AE;
+            }
+          }
+        }
+      }
+    }
     
-    .pricing-card-b{
-      padding: toRem(48) toRem(32) toRem(32) toRem(32);
+    .blue__card{
       background-color: #00326D;
       color: $white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      width: toRem(367);
-
-      @include media-breakpoint-down(xxl){
-        width: toRem(360);
-      }
-      @include media-breakpoint-down(xl){
-        width: toRem(300);
-      }
-      @include media-breakpoint-down(lg-2){
-        width: toRem(290);
-      }
-      @include media-breakpoint-down(lg){
-        width: toRem(680);
-      }
-      @include media-breakpoint-down(md){
-        width: toRem(500);
-      }
-      @include media-breakpoint-down(sm){
-        width: 100%;
-      }
-
 
       .recom{
         position: absolute;
@@ -181,57 +175,20 @@
         border-radius: toRem(5);
       }
 
-      .pricing-card-b-top{
-        list-style-type: none;
+      .pricing__content{
   
-        .pricing-card-b-top-head{
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          padding-bottom: toRem(28);
+        .pricing__bid{
           border-bottom: 1px solid #F4F4F6;
   
-          .pricing-card-b-top-head-tittle{
-            margin-bottom: toRem(16);
-            font-style: normal;
-            font-weight: 700;
-            font-size: toRem(28);
-            line-height: toRem(42);
+          .pricing__tittle{
             color: $white;
           }
-          .pricing-card-b-top-head-price{
-            font-style: normal;
-            font-weight: 800;
-            font-size: toRem(48);
-            line-height: toRem(64);
-            letter-spacing: -0.01em;
+          .pricing__price{
             color: $white;
             span{
-              padding-left: toRem(8);
-              font-style: normal;
-              font-weight: 400;
-              font-size: toRem(18);
-              line-height: toRem(28);
               color: #F4F4F6;
             }
           }
-        }
-        
-        .pricing-card-b-top-check{
-          padding-left: toRem(6);
-          margin-top: toRem(22);
-          margin-bottom: toRem(24);
-          li{
-            padding: toRem(8) toRem(0);
-            display: flex;
-          }
-          img{
-            margin-right: toRem(22);
-          }
-        }
-        
-        .pricing-card-b-btn{
-          width: 100%;
         }
       }
     }

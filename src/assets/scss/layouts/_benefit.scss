@@ -5,6 +5,7 @@
   justify-content: center;
   padding-top: toRem(270);
   padding-bottom: toRem(0.1);
+  overflow-x: hidden;
 
   
   @include media-breakpoint-down(md){
@@ -12,132 +13,139 @@
     padding-top: toRem(116);
   }
 
-  .benefit-content1{
+  .benefit--container{
     position: relative;
-    display: grid;
-    grid-template-columns: toRem(487) 1fr;
-    column-gap: toRem(124);
-    padding-top: toRem(36.62);
-    
-    @include media-breakpoint-down(md){
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      left: 0rem;
-      gap: 2rem;
-    }
-    
-    .benefit-content1-left{
-      @include media-breakpoint-down(md){
-        width: 100%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-      }
-      .benefit-content1-left-tittle{
-        padding-top: toRem(57);
-        font-weight: 800;
-        letter-spacing: -0.01em;
-        color: $white;
-        padding-bottom: toRem(24);
-        @include media-breakpoint-down(md){
-          padding-top: 0rem;
-          padding-bottom: toRem(24);
-        }
-      }
-      .benefit-content1-left-subtittle{
-        font-weight: 500;
-        font-size: toRem(18);
-        line-height: toRem(28);
-        color: #E5E6EB;
-        padding-bottom: toRem(48);
-      }
-    }
-
-
-    .benefit-content1-right{
-      width: 54.584%;
-
-      @include media-breakpoint-down(md){
-        width: 100%;
-      }
-
-      img{
-        position: relative;
-        right: toRem(42.857);
-        @include media-breakpoint-down(md){
-          width: 100%;
-          right: toRem(0);
-        }
-      }
-    }
-  }
-
-
-  .benefit-content2{
-    position: relative;
-    display: flex;
     justify-content: space-between;
-    column-gap: toRem(48);
-    padding-top: toRem(36.62);
 
-    @include media-breakpoint-down(xl){
-      margin-bottom: toRem(100);
-    }
     @include media-breakpoint-down(md){
-      flex-direction: column-reverse;
-      margin-bottom: toRem(55);
       gap: 2rem;
     }
-    
-    .benefit-content2-left{
-      position: relative;
-      width: toRem(496);
+
+
+    .first-content{
+      display: grid;
+      grid-template-columns: toRem(487) 1fr;
+      column-gap: toRem(124);
+      padding-top: toRem(36.62);
+      
       @include media-breakpoint-down(md){
         width: 100%;
-        left: 0rem;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column-reverse;
+        left: 0rem;
       }
       
-      .benefit-content2-left-tittle{
-        padding-top: toRem(57);
-        letter-spacing: -0.01em;
-        color: $white;
-        padding-bottom: toRem(24);
+      .left-content{
         @include media-breakpoint-down(md){
-          padding-top: toRem(0);
+          width: 100%;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+        }
+        .title{
+          padding-top: toRem(57);
+          font-weight: 800;
+          letter-spacing: -0.01em;
+          color: $white;
+          padding-bottom: toRem(24);
+          @include media-breakpoint-down(md){
+            padding-top: 0rem;
+            padding-bottom: toRem(24);
+          }
+        }
+        .description{
+          font-weight: 500;
+          font-size: toRem(18);
+          line-height: toRem(28);
+          color: #E5E6EB;
+          padding-bottom: toRem(48);
         }
       }
-      .benefit-content2-left-subtittle{
-        font-weight: 500;
-        font-size: toRem(18);
-        line-height: toRem(28);
-        color: #E5E6EB;
-        padding-bottom: toRem(48);
+  
+  
+      .right-content{
+        width: 54.584%;
+  
+        @include media-breakpoint-down(md){
+          width: 100%;
+        }
+  
+        .img-content{
+          position: relative;
+          right: toRem(24);
+          @include media-breakpoint-down(md){
+            width: 100%;
+            right: toRem(0);
+          }
+        }
       }
     }
-    
-    .benefit-content2-right{
-      position: relative;
-      display: block;
-      flex: 1;
 
-      .benefit-content2-right-image{
-        height: toRem(618.34);
+
+    .second-content{
+      display: flex;
+      column-gap: toRem(154);
+      padding-top: toRem(36.62);
+  
+      @include media-breakpoint-down(xl){
+        margin-bottom: toRem(100);
+      }
+      @include media-breakpoint-down(md){
+        flex-direction: column;
+        margin-bottom: toRem(55);
+        
+      }
+      
+      .left-content{
+        position: relative;
+        width: toRem(496);
         @include media-breakpoint-down(md){
-          height: auto;
+          width: 100%;
+          left: 0rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
-        img{
-          position: absolute;
-          right: 0;
+        
+        .tittle{
+          padding-top: toRem(57);
+          letter-spacing: -0.01em;
+          color: $white;
+          padding-bottom: toRem(24);
           @include media-breakpoint-down(md){
-            position: relative;
-            width: 100%;
+            padding-top: toRem(0);
+          }
+        }
+        .description{
+          font-weight: 500;
+          font-size: toRem(18);
+          line-height: toRem(28);
+          color: #E5E6EB;
+          padding-bottom: toRem(48);
+        }
+      }
+      
+      .right-content{
+        position: relative;
+        display: block;
+        flex: 1;
+  
+        .right-image{
+          height: toRem(618.34);
+          @include media-breakpoint-down(md){
+            height: auto;
+          }
+          img{
+            position: absolute;
+            right: toRem(24);
+            @include media-breakpoint-down(md){
+              right: 0;
+              position: relative;
+              width: 100%;
+            }
           }
         }
       }

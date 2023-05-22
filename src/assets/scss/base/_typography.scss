@@ -1,5 +1,73 @@
-.nav{
-  a{
-    color: #ffff;
-  }
+@mixin bodyxlarge-bold{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: toRem(20);
+  line-height: toRem(28);
+}
+@mixin bodylarge-bold{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: toRem(18);
+  line-height: toRem(24);
+}
+@mixin bodynormal-bold{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: toRem(16);
+  line-height: toRem(22);
+}
+@mixin bodysmall-bold{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: toRem(14);
+  line-height: toRem(18);
+}
+@mixin bodyxsmall-bold{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: toRem(12);
+  line-height: toRem(16);
+}
+
+
+
+@mixin bodyxlarge-normal{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: toRem(20);
+  line-height: toRem(32);
+}
+@mixin bodylarge-normal{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: toRem(18);
+  line-height: toRem(28);
+}
+@mixin bodynormal-normal{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: toRem(16);
+  line-height: toRem(24);
+}
+@mixin bodysmall-normal{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: toRem(14);
+  line-height: toRem(20);
+}
+@mixin bodyxsmall-normal{
+  font-family: 'Eudoxus Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: toRem(12);
+  line-height: toRem(18);
 }

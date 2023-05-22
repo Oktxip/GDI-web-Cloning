@@ -1,4 +1,4 @@
-.her{
+.hero{
   overflow-x: hidden;
   padding-top: toRem(178);
   overflow: hidden;
@@ -77,7 +77,7 @@
     }
   }
   
-  .hero{
+  .hero--container{
     display: flex;
     justify-content: space-between;
     margin-bottom: toRem(135.76);
@@ -146,25 +146,26 @@
           display: none;
         }
       }
-      .hero-left-text{
-        
-        .hero-left-text-tittle{
+      .hero-text{
+        gap: toRem(8);
+        display: grid;
+
+        .hero-tittle{
           width: 100%;
           font-style: normal;
           color: white;
         }
-        .hero-left-text-subtittle{
+        .hero-subtittle{
           color: white;
-          width:  88.194%;
-          margin-top: toRem(8);
-          font-weight: 10;
+          @include bodyxlarge-normal;
           @include media-breakpoint-down(md){
             width: 100%;
+            @include bodylarge-normal;
           }
         }
       }
 
-      .hero-left-btn{
+      .hero-btn{
         display: flex;
         margin-top: toRem(32);
         justify-content: flex-start;
@@ -189,7 +190,7 @@
         }
       }
       
-      .hero-left-icon{
+      .hero-icon{
         margin-top: toRem(16);
         list-style-type: none;
         @include media-breakpoint-down(md) {
@@ -197,16 +198,18 @@
           margin-bottom: toRem(40);
         }
         
-        .hero-left-icon-pin{
+        .hero-icon__pin{
           color: #E5E6EB;
         }
-        .hero-left-icon-brand{
+        .hero-icon__brand{
           margin-top: toRem(64);
           @include media-breakpoint-down(md) {
             margin-top: toRem(32);
           }
-          @include media-breakpoint-down(xs-2) {
-            width: 100%;
+          .brand{
+            @include media-breakpoint-down(xs-2) {
+              width: 100%;
+            }
           }
         }
       }
@@ -230,7 +233,7 @@
         }
       }
 
-      .hero-right-video-content{
+      .hero-video-content{
         position: absolute;
         left: 1.125rem;
         top: 3rem;
@@ -249,7 +252,7 @@
         }
       }
 
-      .hero-right-video{
+      .hero-video{
         position: absolute;
         @include media-breakpoint-down(md){
           position: relative;
@@ -260,7 +263,7 @@
 
       }
 
-      .hero-right-image{
+      .hero-image{
         display: none;
         @include media-breakpoint-down(md){
           display: block;

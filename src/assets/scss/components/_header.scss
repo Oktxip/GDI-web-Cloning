@@ -54,7 +54,7 @@ header{
       }
     }
     
-    .nav-hamburger-menu {
+    .hamburger-menu {
       display: none;
       align-items: center;
       cursor: pointer;
@@ -84,27 +84,23 @@ header{
     }
     
 
-    .nav-hamburger-menu.active span:nth-child(1) {
-      transform: rotate(45deg);
-      bottom: toRem(-7);
+    .hamburger-menu.active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
     }
-    .nav-hamburger-menu.active span:nth-child(2) {
+    .hamburger-menu.active span:nth-child(2) {
       opacity: 0;
     }
-    .nav-hamburger-menu.active span:nth-child(3) {
-      transform: rotate(-45deg);
-      top: toRem(-7);
+    .hamburger-menu.active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
     }
-    .nav-hamburger-menu span:nth-child(1) {
-      transform: rotate(0deg);
-      bottom: 0;
+    .hamburger-menu span:nth-child(1) {
+      transform: translateY(0) rotate(0);
     }
-    .nav-hamburger-menu span:nth-child(2) {
+    .hamburger-menu span:nth-child(2) {
       opacity: 1;
     }
-    .nav-hamburger-menu span:nth-child(3) {
-      transform: rotate(0deg);
-      top: 0;
+    .hamburger-menu span:nth-child(3) {
+      transform: translateY(0) rotate(0);
     }
     
 
@@ -121,6 +117,10 @@ header{
       flex-grow: 1;
       justify-content: space-between;
       padding-left: 2rem;
+
+      a{
+        color: $white;
+      }
       
       @include media-breakpoint-down(xl){
         padding-left: 1.125rem;
@@ -194,7 +194,7 @@ header{
           width: 100%;
           gap: 0;
         }
-        .navigation-btn-login{
+        .navigation-btn__login{
           transition: all linear .4s;
           display: flex;
           flex-direction: row;

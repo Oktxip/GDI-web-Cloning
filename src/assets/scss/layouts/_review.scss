@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow: hidden;
 
   .review-text{
     display: flex;
@@ -16,8 +17,7 @@
     margin-bottom: toRem(64);
     position: relative;
 
-    .review-text-tittle{
-      width: toRem(609);
+    .review-tittle{
       font-style: normal;
       font-weight: 800;
       text-align: center;
@@ -29,7 +29,7 @@
       }
     }
 
-    .review-text-subtittle{
+    .review-subtittle{
       width: toRem(446);
       font-style: normal;
       font-weight: 500;
@@ -102,7 +102,7 @@
           height: toRem(900);
         }
         
-        .review-text {
+        .comment {
           font-family: 'Eudoxus Sans';
           font-style: normal;
           font-weight: 500;
@@ -110,13 +110,14 @@
           line-height: toRem(40);
           margin-bottom: toRem(40);
           color: #0B0A0F;
+          text-align: center;
     
         }
-        .review-user {
+        .user {
           display: flex;
           align-items: center;
           
-          .review-user-photo img {
+          .user-photo img {
             width: toRem(64);
             height: toRem(64);
             object-fit: cover;
@@ -124,7 +125,7 @@
             margin-right: 1rem;
           }
           
-          .review-user-information-username {
+          .username {
             font-style: normal;
             font-weight: 700;
             font-size: toRem(24);
@@ -132,7 +133,7 @@
             color: #0B0A0F;
           }
           
-          .review-user-information-work {
+          .work {
             font-style: normal;
             font-weight: 500;
             font-size: toRem(18);
