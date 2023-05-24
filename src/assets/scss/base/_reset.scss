@@ -7,6 +7,27 @@ body, html{
   animation: all linear .2s;  
 }
 
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
 .container{
   @include media-breakpoint-down(sm){
     width: 100% !important;
@@ -28,3 +49,4 @@ body, html{
 ul{
   padding: 0;
 }
+

@@ -1,0 +1,1 @@
+{"version":3,"file":"assets/js/pages/dashboard.js","mappings":";;;;;AAAA;AACA;AACA;AACA;AACA,CAAC;AACD","sources":["webpack://global-digital-intelligence/./src/assets/js/pages/dashboard.js"],"sourcesContent":["$(document).ready(function () {\r\nconsole.log('okta tampan');\r\n\r\n  \r\n})\r\n\r\n"],"names":[],"sourceRoot":""}

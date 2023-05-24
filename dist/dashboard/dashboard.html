@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Digital Intelligence</title>
+  <link rel="shortcut icon" href="../assets/media/images/traced.svg">
+  
+  <!-- Start::Global Styles (used by all pages) -->
+  <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- End::Global Styles -->
+  
+  <!-- Start::Page Styles (used by this page) -->
+  <link rel="stylesheet" href="../assets/css/pages/dashboard/dashboard.css">
+  <!-- End::Page Styles (used by this page) -->
+
+
+  <!-- Start::Page Styles (caraousel slick) -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- End::Page Styles -->
+
+  <!-- Start::Page Styles (aos animation) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- End::Page Styles -->
+</head>
+<body>
+  <section class="wrapper-dashboard">
+    <!-- Start:: sidebar section -->
+    <section class="sidebar-dashboard js-sidebar-check">
+      <div class="sidebar-dashboard__header">
+        <a href="#" class="sb-db-head__icon">
+          <img src="../assets/media/images/traced.svg" class="icon__content">
+        </a>
+        <a href="#" class="sb-db__arrow js-sidebar-click" onclick="toggleSidebar()">
+          <img src="../assets/media/images/dashboard/arrow-dashboard-sidebar.svg" class="icon__content js-sidebar-check">
+        </a>
+      </div>
+    
+    
+      <div class="sidebar-dashboard__menu js-sidebar-check">
+        <a href="" class="sb-db-menu__link active">
+          <img src="../assets/media/images/dashboard/dashboard.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check active">Dashboard</span>
+        </a>
+        <a href="" class="sb-db-menu__link">
+          <img src="../assets/media/images/dashboard/search.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check">Search</span>
+        </a>
+        <a href="" class="sb-db-menu__link">
+          <img src="../assets/media/images/dashboard/reports.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check">Reports</span>
+        </a>
+        
+        <div class="sb-db-menu__dropdown">
+          <div class="sb-db-menu__link">
+            <div class="sb-db-menu__name">
+              <img src="../assets/media/images/dashboard/database.svg" alt="" style='width: 24px;''>
+              <span class="js-sidebar-check">Interactive data</span>
+            </div>
+            <span>+</span>
+            <span>-</span>
+          </div>
+        </div>
+    
+        <a href="" class="sb-db-menu__link">
+          <img src="../assets/media/images/dashboard/company.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check">Company intelligence</span>
+        </a>
+        <a href="" class="sb-db-menu__link">
+          <img src="../assets/media/images/dashboard/users.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check">Contacts</span>
+        </a>
+        <a href="" class="sb-db-menu__link">
+          <img src="../assets/media/images/dashboard/server.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check">Benchmark</span>
+        </a>
+      </div>
+    </section>
+    
+    
+    <script>
+    function toggleSidebar() {
+      var sidebarHeaders = document.querySelectorAll('.js-sidebar-check');
+    
+      sidebarHeaders.forEach(function(sidebarHeader) {
+        sidebarHeader.classList.toggle('closed');
+      });
+    }
+    </script>    <!-- End:: sidebar section -->
+
+  </section>
+
+
+  
+  <!-- Start::Page Scripts (used by this page) -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- End::Page Scripts -->
+  <!-- Start::Page Scripts (aos animtaion) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- End::Page Scripts -->
+
+  <!-- Start::Global Bundle Scripts (used by all pages) -->
+  <script src="../assets/js/scripts.bundle.js"></script>
+  <!-- End::Global Bundle Scripts -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script src="../assets/js/pages/dashboard.js"></script>
+  <!-- End::Page Scripts -->
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<section class="sidebar-dashboard js-sidebar-check">
+  <div class="sidebar-dashboard__header">
+    <a href="#" class="sb-db-head__icon">
+      <img src="../assets/media/images/traced.svg" class="icon__content">
+    </a>
+    <a href="#" class="sb-db__arrow js-sidebar-click" onclick="toggleSidebar()">
+      <img src="../assets/media/images/dashboard/arrow-dashboard-sidebar.svg" class="icon__content js-sidebar-check">
+    </a>
+  </div>
+
+
+  <div class="sidebar-dashboard__menu js-sidebar-check">
+    <a href="" class="sb-db-menu__link active">
+      <img src="../assets/media/images/dashboard/dashboard.svg" alt="" style='width: 24px;''>
+      <span class="js-sidebar-check active">Dashboard</span>
+    </a>
+    <a href="" class="sb-db-menu__link">
+      <img src="../assets/media/images/dashboard/search.svg" alt="" style='width: 24px;''>
+      <span class="js-sidebar-check">Search</span>
+    </a>
+    <a href="" class="sb-db-menu__link">
+      <img src="../assets/media/images/dashboard/reports.svg" alt="" style='width: 24px;''>
+      <span class="js-sidebar-check">Reports</span>
+    </a>
+    
+    <div class="sb-db-menu__dropdown">
+      <div class="sb-db-menu__link">
+        <div class="sb-db-menu__name">
+          <img src="../assets/media/images/dashboard/database.svg" alt="" style='width: 24px;''>
+          <span class="js-sidebar-check">Interactive data</span>
+        </div>
+        <span>+</span>
+        <span>-</span>
+      </div>
+    </div>
+
+    <a href="" class="sb-db-menu__link">
+      <img src="../assets/media/images/dashboard/company.svg" alt="" style='width: 24px;''>
+      <span class="js-sidebar-check">Company intelligence</span>
+    </a>
+    <a href="" class="sb-db-menu__link">
+      <img src="../assets/media/images/dashboard/users.svg" alt="" style='width: 24px;''>
+      <span class="js-sidebar-check">Contacts</span>
+    </a>
+    <a href="" class="sb-db-menu__link">
+      <img src="../assets/media/images/dashboard/server.svg" alt="" style='width: 24px;''>
+      <span class="js-sidebar-check">Benchmark</span>
+    </a>
+  </div>
+</section>
+
+
+<script>
+function toggleSidebar() {
+  var sidebarHeaders = document.querySelectorAll('.js-sidebar-check');
+
+  sidebarHeaders.forEach(function(sidebarHeader) {
+    sidebarHeader.classList.toggle('closed');
+  });
+}
+</script>
