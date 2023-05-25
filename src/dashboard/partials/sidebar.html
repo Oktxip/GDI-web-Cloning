@@ -3,7 +3,7 @@
     <a href="#" class="sb-db-head__icon">
       <img src="../assets/media/images/traced.svg" class="icon__content">
     </a>
-    <a href="#" class="sb-db__arrow js-sidebar-click" onclick="toggleSidebar()">
+    <a href="#" class="sb-db__arrow js-sidebar-click" id="btn-sidebar-toggle">
       <img src="../assets/media/images/dashboard/arrow-dashboard-sidebar.svg" class="icon__content js-sidebar-check">
     </a>
   </div>
@@ -29,8 +29,9 @@
           <img src="../assets/media/images/dashboard/database.svg" alt="" style='width: 24px;''>
           <span class="js-sidebar-check">Interactive data</span>
         </div>
-        <span>+</span>
-        <span>-</span>
+        <div class="dropdown-button js-sidebar-check">
+          <span class="icon"></span>
+        </div>
       </div>
     </div>
 
@@ -49,13 +50,3 @@
   </div>
 </section>
 
-
-<script>
-function toggleSidebar() {
-  var sidebarHeaders = document.querySelectorAll('.js-sidebar-check');
-
-  sidebarHeaders.forEach(function(sidebarHeader) {
-    sidebarHeader.classList.toggle('closed');
-  });
-}
-</script>
