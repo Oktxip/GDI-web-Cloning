@@ -14,12 +14,13 @@ body, html{
 .wrapper-dashboard{
   position: relative;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
 
   .closed{
-    max-width: 120px !important;
-    overflow-x: hidden;
+  max-width: toRem(120) !important;
+  overflow-x: hidden;
   }
+
   
   .sidebar-dashboard{
     position: fixed;
@@ -28,8 +29,8 @@ body, html{
     flex-direction: column;
     background: url(../../../media/images/dashboard/sidebar-dashboard.png) no-repeat no-repeat top center;
     background-size: cover;
-    max-width: 272px;
-    width: 240px;
+    max-width: toRem(272);
+    width: 100%;
     overflow: hidden;
     height: 100%;
     padding: 1.5rem 1rem;
@@ -48,12 +49,12 @@ body, html{
         transform: scale(1.05)!important;
       }
       .sb-db-head__icon{
-        height: 28px;
-        width: 28px;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: toRem(40);
+        width: toRem(40);
         background: #fff;
         border: none;
         border-radius: 0.5rem;
@@ -62,8 +63,8 @@ body, html{
 
         .icon__content{
           position: relative;
-          max-height: 27px;
-          max-width: 27px;
+          max-height: toRem(27);
+          max-width: toRem(27);
         }
       }
       .sb-db__arrow:hover{
@@ -75,8 +76,8 @@ body, html{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 24px;
-        width: 24px;
+        height: toRem(24);
+        width: toRem(24);
         background: #f4f4f6;
         border: none;
         border-radius: 0.25rem;
@@ -93,8 +94,8 @@ body, html{
         }
         .icon__content{
           position: relative;
-          max-height: 27px;
-          max-width: 27px;
+          max-height: toRem(27);
+          max-width: toRem(27);
           }
       }
     }
@@ -135,12 +136,7 @@ body, html{
         }
 
         span{
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          letter-spacing: -.01rem;
+          @include text-dashboard__body--regular;
           color: #fff;
           display: block;
           transition: all linear .2s;
@@ -175,12 +171,7 @@ body, html{
               display: none;
             }
             span{
-              font-family: Inter;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 1rem;
-              line-height: 1.5rem;
-              letter-spacing: -.01rem;
+              @include text-dashboard__body--regular;
               color: #fff;
               display: block;
               transition: all linear .2s;
@@ -199,7 +190,6 @@ body, html{
               transform: rotate(45deg);
             }
             
-
           }
         }
       }

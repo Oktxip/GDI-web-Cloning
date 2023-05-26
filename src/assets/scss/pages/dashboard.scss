@@ -1,0 +1,12 @@
+// Initialize first
+@import "../init";
+
+// Import files  
+@import "home";
+
+// Add your style here
+@import 'dashboard/sidebar';
+@import 'dashboard/main-dashboard';
+@import 'dashboard/header';
+
+

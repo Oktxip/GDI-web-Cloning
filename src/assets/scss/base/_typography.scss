@@ -71,3 +71,24 @@
   font-size: toRem(12);
   line-height: toRem(18);
 }
+
+
+// dashboard typograph
+
+
+@mixin text-dashboard__body--regular{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -.01rem;
+}
+@mixin text-dashboard__body--regular-medium{
+  font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -.01rem
+}

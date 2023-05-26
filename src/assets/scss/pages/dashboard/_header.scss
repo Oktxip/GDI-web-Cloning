@@ -1,0 +1,108 @@
+.header-dashboard{
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  
+  .header-container{
+    width: 100%;
+    position: relative;
+    padding: 0 2rem;
+    border-bottom: toRem(1) solid #e5e6eb;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: toRem(89);
+
+    .header-left{
+      position: relative;
+      display: flex;
+      gap: 2.5rem;
+      width: max-content;
+
+      .active::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        border-radius: 1rem;
+        background: #2979d7;
+      }
+      .active{
+        color: #007bff !important;
+        font-weight: 600;
+      }
+      .header-item:hover{
+        ::after{
+          transition: all linear .2s;
+          content: "";
+          background: #2979d7;
+          color: #007bff !important;
+          width: 100%;
+          border-radius: 1rem;
+          position: absolute;
+          height: 3px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        background: transparent;
+        color: #007bff !important;
+        transition: all linear .2s;
+      }
+      .header-item{
+        color: #6c727f;
+        position: relative;
+        transition: all linear .2s;
+        cursor: pointer;
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+          color: inherit;
+        }
+      }
+    }
+
+    .header-right{
+      display: flex;
+      position: relative;
+      align-items: center;
+
+      .header-item {
+        position: relative;
+        transition: all linear .2s;
+        cursor: pointer;
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .header-link--profile{
+          color: #000;
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+
+          .header-profile--img{
+            height: 3rem;
+            width: 3rem;
+            border-radius: 100%;
+            border: none;
+          }
+          // .header-profile--name{
+          //   color: #2979d7;
+          // }
+          .header-profile--icon{
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
