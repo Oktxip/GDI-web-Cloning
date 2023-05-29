@@ -5,8 +5,262 @@
 @import "home";
 
 // Add your style here
-@import 'dashboard/sidebar';
-@import 'dashboard/main-dashboard';
-@import 'dashboard/header';
 
 
+.main-dashboard.close-main-dashboard{
+  padding-left: toRem(120) !important;
+  transition: all ease-in-out .4s;
+}
+.main-dashboard{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding-left: toRem(272);
+  transition: all ease-in-out .4s;
+  background: #fff;
+}
+
+.title-search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem 3rem;
+  width: 100%;
+
+  .main-header__title{
+    color: #000;
+  }
+
+  .main-header__search{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    .main-header__search-input{
+      padding: 0.875rem 3rem;
+      background: #fff;
+      background: url(../../media/images/dashboard/icon-search-dashboard.svg) no-repeat 1rem 0.875rem;
+      background-size: 1.25rem;
+      border: 1px solid #e5e6eb;
+      border-radius: 0.25rem;
+      width: 30.6875rem;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      font-size: .875rem;
+      line-height: 1.45rem;
+      letter-spacing: -.01rem;
+      color: #000;
+      transition: all linear .2s;
+    }
+
+    .main-header__search-button {
+      max-width: 10.25rem;
+      width: 100%;
+    }
+  }
+}
+
+.latest-reports-card {
+  padding-left: 2rem;
+
+  .latest-reports__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+
+    .latest-reports__head-title {
+      color: #0b0a0f;
+    }
+
+    .latest-reports__head-link {
+      color: #2979d7;
+      text-decoration: underline;
+      transition: all linear .2s;
+  }
+  }
+
+  .latest-reports__carousel {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    padding-left: 0.75rem;
+
+    .slick-slide{
+      margin: 0 0.75rem;
+    }
+    .slick-list {
+      padding: 0 25.7% 0 0!important;
+
+      .latest-reports__items{
+        display: flex!important;
+        padding: 1rem;
+        border: 1px solid #e5e6eb;
+        border-radius: 0.5rem;
+        width: max-content;
+
+        .latest-reports__items-left {
+          position: relative;
+
+          .latest-reports__items-img {
+            width: auto;
+            height: auto;
+            max-width: 7.938rem;
+            max-height: 10.938rem;
+            border-radius: 0.25rem;
+        }
+
+        .latest-reports__items-bookmark.active {
+          background: #fff7eb;
+      }
+
+      .latest-reports__items-bookmark.active::before {
+        background-image: url(../../media/images/dashboard/star-active.svg);
+        background-size: cover;
+        background-repeat: no-repeat no-repeat;
+    }
+
+      .latest-reports__items-bookmark::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 1rem;
+        width: 1rem;
+        background-image: url(../../media/images/dashboard/star.svg);
+        background-size: cover;
+        background-repeat: no-repeat no-repeat;
+        transition: all linear .2s;
+    }
+
+        .latest-reports__items-bookmark {
+          position: absolute;
+          top: 0.5rem;
+          left: 0.5rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          transition: all linear .2s;
+      }
+      }
+
+        .latest-reports__items-center {
+          display: flex;
+          flex-direction: column;
+          padding-left: 1rem;
+          padding-right: 0.75rem;
+          .latest-repost__items-type {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            width: max-content;
+          }
+          .latest-repost__items-type--orange {
+            background: rgba(246,173,123,.1);
+            color: #f6ad7b;
+          }
+          .latest-repost__items-type--green {
+            background: rgba(117,207,184,.1);
+            color: #75cfb8;
+        }
+        .latest-repost__items-type--violet {
+          background: rgba(185,128,240,.1);
+          color: #b980f0;
+      }
+      
+            .latest-repost__items-name {
+              max-width: 200px;
+              word-break: break-word;
+              margin-top: 0.25rem;
+          }
+    
+          .latest-repost__items-link {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            color: #2979d7;
+            gap: 0.5rem;
+            transition: all linear .2s;
+          }
+        }
+
+        .latest-reports__items-right {
+          display: flex;
+          margin-left: auto;
+          
+          a{
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+
+            img {
+              vertical-align: middle;
+              border-style: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .latest-reports__slick-pagination{
+    padding-right: 2rem;
+  }
+
+  
+  .slick_pagination{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    li button:before {
+      opacity: 0; 
+    }
+
+    li.slick-active button:before {
+      opacity: 0; 
+    }
+    li button:hover:before, .slick-dots li button:focus:before {
+      opacity: 0;
+    }
+    li {
+      margin: 0 4px;
+      align-items: center;
+      justify-content: center;
+      display: inline-grid;
+
+
+      button {
+          background:rgba(41,121,215,.2);
+          height: 0.5rem;
+          width: 0.5rem;
+          overflow: hidden;
+          color:rgba(41,121,215,.2);
+          border: none;
+          border-radius: 100%;
+      }
+      &.slick-active {
+          button {
+              background: #2979d7;
+              color: #2979d7;
+          }
+      }
+    }
+
+  }
+}

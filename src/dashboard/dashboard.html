@@ -1,57 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Digital Intelligence</title>
-  <link rel="shortcut icon" href="../assets/media/images/traced.svg">
-  
-  <!-- Start::Global Styles (used by all pages) -->
-  <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
-  <!-- End::Global Styles -->
-  
-  <!-- Start::Page Styles (used by this page) -->
-  <link rel="stylesheet" href="../assets/css/pages/dashboard.css">
-  <!-- End::Page Styles (used by this page) -->
+{{#> ../partials/template.html  }}
 
+<!-- Start:: title-search section -->
+{{> ../partials/section/title-search.html}}
+<!-- End:: title-search section -->
 
-  <!-- Start::Page Styles (caraousel slick) -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <!-- End::Page Styles -->
+<!-- Start:: latest-reports-card section -->
+{{> ../partials/section/latest-reports-card.html}}
+<!-- End:: latest-reports-card section -->
 
-  <!-- Start::Page Styles (aos animation) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- End::Page Styles -->
-</head>
-<body>
-  <section class="wrapper-dashboard">
-    <!-- Start:: sidebar section -->
-    {{> partials/sidebar.html}}
-    <!-- End:: sidebar section -->
-
-    <!-- Start:: main-dashboard section -->
-    {{> partials/main-dashboard.html}}
-    <!-- End:: main-dashboard section -->
-  </section>
-
-
-  
-  <!-- Start::Page Scripts (used by this page) -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <!-- End::Page Scripts -->
-  <!-- Start::Page Scripts (aos animtaion) -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- End::Page Scripts -->
-
-  <!-- Start::Global Bundle Scripts (used by all pages) -->
-  <script src="../assets/js/scripts.bundle.js"></script>
-  <!-- End::Global Bundle Scripts -->
-  <!-- Start::Page Scripts (used by this page) -->
-  <script src="../assets/js/pages/dashboard.js"></script>
-  <!-- End::Page Scripts -->
-
-</body>
-</html>
+{{/ ../partials/template.html}}

@@ -92,3 +92,38 @@
     line-height: 1.5rem;
     letter-spacing: -.01rem
 }
+
+.text-dashboard__body--regular-semibold {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -.01rem;
+}
+.text-dashboard__body--small-medium {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.45rem;
+  letter-spacing: -.01rem;
+}
+
+.h1--be{
+  font-family: Inter;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+  line-height: 1.5rem !important;
+  letter-spacing: -.01rem !important;
+}
+
+.h3--be {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -.01rem;
+}

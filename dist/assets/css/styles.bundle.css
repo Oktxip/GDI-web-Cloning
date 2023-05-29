@@ -661,6 +661,42 @@ ul {
   padding: 0;
 }
 
+.text-dashboard__body--regular-semibold {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01rem;
+}
+
+.text-dashboard__body--small-medium {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.45rem;
+  letter-spacing: -0.01rem;
+}
+
+.h1--be {
+  font-family: Inter;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+  line-height: 1.5rem !important;
+  letter-spacing: -0.01rem !important;
+}
+
+.h3--be {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01rem;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -20525,6 +20561,277 @@ header .nav .navigation .navigation-btn .navigation-btn__sign:hover {
   border: 0.06rem solid #5DB8D0;
 }
 
+.header-dashboard {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+.header-dashboard .header-container {
+  width: 100%;
+  position: relative;
+  padding: 0 2rem;
+  border-bottom: 0.0625rem solid #e5e6eb;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 5.5625rem;
+}
+.header-dashboard .header-container .header-left {
+  position: relative;
+  display: flex;
+  gap: 2.5rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header-dashboard .header-container .header-left .active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  border-radius: 1rem;
+  background: #2979d7;
+}
+.header-dashboard .header-container .header-left .active {
+  color: #007bff !important;
+  font-weight: 600;
+}
+.header-dashboard .header-container .header-left .header-item:hover {
+  background: transparent;
+  color: #007bff !important;
+  transition: all linear 0.2s;
+}
+.header-dashboard .header-container .header-left .header-item:hover ::after {
+  transition: all linear 0.2s;
+  content: "";
+  background: #2979d7;
+  color: #007bff !important;
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-dashboard .header-container .header-left .header-item {
+  color: #6c727f;
+  position: relative;
+  transition: all linear 0.2s;
+  cursor: pointer;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-dashboard .header-container .header-left .header-item a {
+  color: inherit;
+}
+.header-dashboard .header-container .header-right {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.header-dashboard .header-container .header-right .header-item {
+  position: relative;
+  transition: all linear 0.2s;
+  cursor: pointer;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-dashboard .header-container .header-right .header-item .header-link--profile {
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.header-dashboard .header-container .header-right .header-item .header-link--profile .header-profile--img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  border: none;
+}
+.header-dashboard .header-container .header-right .header-item .header-link--profile .header-profile--icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.wrapper-dashboard {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.wrapper-dashboard .closed {
+  max-width: 7.5rem !important;
+  overflow-x: hidden;
+}
+.wrapper-dashboard .sidebar-dashboard {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: url(../media/images/dashboard/sidebar-dashboard.png) no-repeat no-repeat top center;
+  background-size: cover;
+  max-width: 17rem;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db-head__icon:hover {
+  transition: all linear 0.4s;
+  transform: scale(1.05) !important;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db-head__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.375rem;
+  transition: all linear 0.4s;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db-head__icon .icon__content {
+  position: relative;
+  max-height: 1.6875rem;
+  max-width: 1.6875rem;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db__arrow:hover {
+  transition: all linear 0.4s;
+  transform: scale(1.05) !important;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db__arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #f4f4f6;
+  border: none;
+  border-radius: 0.25rem;
+  transition: all linear 0.4s;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db__arrow .closed {
+  transform: scaleX(-1) !important;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db__arrow .icon__content:hover {
+  transition: all linear 0.4s;
+  transform: scale(1.05);
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__header .sb-db__arrow .icon__content {
+  position: relative;
+  max-height: 1.6875rem;
+  max-width: 1.6875rem;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu.closed {
+  align-items: center;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+  align-items: stretch;
+  transition: all linear 0.4s;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  font-weight: 600 !important;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all ease-in-out 0.2s;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__link .active {
+  background: transparent !important;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__link .closed {
+  display: none;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__link span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01rem;
+  color: #fff;
+  display: block;
+  transition: all linear 0.2s;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown.open {
+  max-height: 10rem;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown {
+  max-height: 3rem;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown .sb-db-menu__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all ease-in-out 0.2s;
+  justify-content: space-between;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown .sb-db-menu__link .sb-db-menu__name {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown .sb-db-menu__link .sb-db-menu__name .closed {
+  display: none;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown .sb-db-menu__link .sb-db-menu__name span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01rem;
+  color: #fff;
+  display: block;
+  transition: all linear 0.2s;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown .sb-db-menu__link .dropdown-button .icon::before {
+  content: "+";
+  display: inline-block;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+.wrapper-dashboard .sidebar-dashboard .sidebar-dashboard__menu .sb-db-menu__dropdown .sb-db-menu__link .dropdown-button .js-sidebar-check .open .icon::before {
+  content: "-";
+  transform: rotate(45deg);
+}
+
 footer {
   margin-top: 7.5rem;
   margin-bottom: 1.5rem;
@@ -20779,6 +21086,32 @@ footer .footer__foot .cr .cr-media .cr-media--wrapper img:hover {
 .wd-btn:hover {
   background-color: #2979D7;
   border: 0.06rem solid #FFFFFF;
+}
+
+.btn-be-dashboard {
+  position: relative;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #2979d7;
+  border: 1px solid #2979d7;
+  transition: all linear 0.2s;
+}
+
+.btn-be-dashboard--large {
+  padding: 0.75rem 1rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.45rem;
+  letter-spacing: -0.01rem;
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/
