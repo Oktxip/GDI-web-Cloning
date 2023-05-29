@@ -10,24 +10,10 @@
 }
 @font-face {
   font-family: "EudoxusSans";
-  src: url("../../media/fonts/EudoxusSans-ExtraBolditalic.eot");
-  src: url("../../media/fonts/EudoxusSans-ExtraBolditalic.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-ExtraBolditalic.woff") format("woff"), url("../../media/fonts/EudoxusSans-ExtraBolditalic.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-ExtraBolditalic.svg?#webfont") format("svg");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "EudoxusSans";
   src: url("../../media/fonts/EudoxusSans-Bold.eot");
   src: url("../../media/fonts/EudoxusSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-Bold.woff") format("woff"), url("../../media/fonts/EudoxusSans-Bold.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-Bold.svg?#webfont") format("svg");
   font-weight: 700;
   font-style: normal;
-}
-@font-face {
-  font-family: "EudoxusSans";
-  src: url("../../media/fonts/EudoxusSans-BoldItalic.eot");
-  src: url("../../media/fonts/EudoxusSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-BoldItalic.woff") format("woff"), url("../../media/fonts/EudoxusSans-BoldItalic.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-BoldItalic.svg?#webfont") format("svg");
-  font-weight: 700;
-  font-style: italic;
 }
 @font-face {
   font-family: "EudoxusSans";
@@ -38,24 +24,10 @@
 }
 @font-face {
   font-family: "EudoxusSans";
-  src: url("../../media/fonts/EudoxusSans-SemiBoldItalic.eot");
-  src: url("../../media/fonts/EudoxusSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-SemiBoldItalic.woff") format("woff"), url("../../media/fonts/EudoxusSans-SemiBoldItalic.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-SemiBoldItalic.svg?#webfont") format("svg");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "EudoxusSans";
   src: url("../../media/fonts/EudoxusSans-Medium.eot");
   src: url("../../media/fonts/EudoxusSans-Medium.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-Medium.woff") format("woff"), url("../../media/fonts/EudoxusSans-Medium.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-Medium.svg?#webfont") format("svg");
   font-weight: 500;
   font-style: normal;
-}
-@font-face {
-  font-family: "EudoxusSans";
-  src: url("../../media/fonts/EudoxusSans-MediumItalic.eot");
-  src: url("../../media/fonts/EudoxusSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-MediumItalic.woff") format("woff"), url("../../media/fonts/EudoxusSans-MediumItalic.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-MediumItalic.svg?#webfont") format("svg");
-  font-weight: 500;
-  font-style: italic;
 }
 @font-face {
   font-family: "EudoxusSans";
@@ -66,24 +38,66 @@
 }
 @font-face {
   font-family: "EudoxusSans";
-  src: url("../../media/fonts/EudoxusSans-RegulerItalic.eot");
-  src: url("../../media/fonts/EudoxusSans-RegulerItalic.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-RegulerItalic.woff") format("woff"), url("../../media/fonts/EudoxusSans-RegulerItalic.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-RegulerItalic.svg?#webfont") format("svg");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "EudoxusSans";
   src: url("../../media/fonts/EudoxusSans-Light.eot");
   src: url("../../media/fonts/EudoxusSans-Light.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-Light.woff") format("woff"), url("../../media/fonts/EudoxusSans-Light.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-Light.svg?#webfont") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "EudoxusSans";
-  src: url("../../media/fonts/EudoxusSans-LightItalic.eot");
-  src: url("../../media/fonts/EudoxusSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/EudoxusSans-LightItalic.woff") format("woff"), url("../../media/fonts/EudoxusSans-LightItalic.ttf") format("truetype"), url("../../media/fonts/EudoxusSans-LightItalic.svg?#webfont") format("svg");
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-ExtraBold.eot");
+  src: url("../../media/fonts/Inter-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-ExtraBold.woff") format("woff"), url("../../media/fonts/Inter-ExtraBold.ttf") format("truetype"), url("../../media/fonts/Inter-ExtraBold.svg?#webfont") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-Bold.eot");
+  src: url("../../media/fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-Bold.woff") format("woff"), url("../../media/fonts/Inter-Bold.ttf") format("truetype"), url("../../media/fonts/Inter-Bold.svg?#webfont") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-SemiBold.eot");
+  src: url("../../media/fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-SemiBold.woff") format("woff"), url("../../media/fonts/Inter-SemiBold.ttf") format("truetype"), url("../../media/fonts/Inter-SemiBold.svg?#webfont") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-Medium.eot");
+  src: url("../../media/fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-Medium.woff") format("woff"), url("../../media/fonts/Inter-Medium.ttf") format("truetype"), url("../../media/fonts/Inter-Medium.svg?#webfont") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-Regular.eot");
+  src: url("../../media/fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-Regular.woff") format("woff"), url("../../media/fonts/Inter-Regular.ttf") format("truetype"), url("../../media/fonts/Inter-Regular.svg?#webfont") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-Light.eot");
+  src: url("../../media/fonts/Inter-Light.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-Light.woff") format("woff"), url("../../media/fonts/Inter-Light.ttf") format("truetype"), url("../../media/fonts/Inter-Light.svg?#webfont") format("svg");
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-ExtraLight.eot");
+  src: url("../../media/fonts/Inter-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-ExtraLight.woff") format("woff"), url("../../media/fonts/Inter-ExtraLight.ttf") format("truetype"), url("../../media/fonts/Inter-ExtraLight.svg?#webfont") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../media/fonts/Inter-Thin.eot");
+  src: url("../../media/fonts/Inter-Thin.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/Inter-Thin.woff") format("woff"), url("../../media/fonts/Inter-Thin.ttf") format("truetype"), url("../../media/fonts/Inter-Thin.svg?#webfont") format("svg");
+  font-weight: 100;
+  font-style: normal;
 }
 /*!
  * Bootstrap Reboot v5.2.3 (https://getbootstrap.com/)
@@ -178,7 +192,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: EudoxusSans, sans-serif;
+  --bs-body-font-family: inter, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.88;
