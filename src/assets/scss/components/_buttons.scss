@@ -89,7 +89,7 @@
   align-items: center;
   padding: toRem(16) toRem(32);
   gap: toRem(10);
-  width: toRem(188);
+  width: toRem(192);
   height: toRem(56);
   color: $white;
 }
@@ -122,4 +122,29 @@
     font-size: 1.125rem;
     line-height: 1.45rem;
     letter-spacing: -.01rem;
+}
+
+.btn-be-dashboard--small {
+  padding: 0.5rem 1rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.45rem;
+  letter-spacing: -.01rem;
+}
+
+.btn-be-dashboard {
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #2979d7;
+  border: 1px solid #2979d7;
+  transition: all linear .2s;
 }

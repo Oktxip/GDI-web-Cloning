@@ -102,9 +102,16 @@
       .active{
         background: rgba(255,255,255,.1)!important;
         font-weight: 600!important;
+        width: 100%;
+        justify-content: center;
       }
       
-      
+      .sb-db-menu__link:hover {
+        background: rgba(41,121,215,.3)!important;
+      }
+      .sb-db-menu__link.active:hover {
+        background: rgba(255, 255, 255, 0.1) !important;
+      }
       
       .sb-db-menu__link{
         position: relative;
@@ -135,7 +142,6 @@
         
       }
       .sb-db-menu__dropdown{
-        max-height: 3rem;
         overflow: hidden;
         transition: all .4s ease-in-out;
 
@@ -171,10 +177,11 @@
               display: inline-block;
               font-weight: bold;
               transition: transform 0.3s ease-in-out;
+              font-size: 30px;
+              font-weight: 200;
             }
-            .js-sidebar-check .open .icon::before {
-              content: "-";
-              transform: rotate(45deg);
+            .open::before {
+              content: "-" !important;
             }
             
           }

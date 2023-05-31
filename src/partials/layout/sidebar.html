@@ -24,17 +24,25 @@
     </a>
     
     <div class="sb-db-menu__dropdown">
-      <div class="sb-db-menu__link">
+      <div class="sb-db-menu__link js-dropdown">
         <div class="sb-db-menu__name">
           <img src="../assets/media/images/dashboard/database.svg" alt="" style='width: 24px;''>
-          <span class="js-sidebar-check">Interactive data</span>
+          <span class="js-sidebar-check">Interactive Data</span>
         </div>
         <div class="dropdown-button js-sidebar-check">
-          <span class="icon"></span>
+          <span id="dropdown-content" class="icon"></span>
         </div>
       </div>
+      <div  id="dropdown-content" class="sb-db-menu__link-interactive js-sidebar-check">
+        <a href="#" class="animate__animated animate__fadeInUp sb-db-menu__link">
+          <span class="text-dashboard__body--regular sb-db-menu__text">Infographics</span>
+        </a>
+        <a href="#" class="animate__animated animate__fadeInUp sb-db-menu__link">
+          <span class="text-dashboard__body--regular sb-db-menu__text">Graphs</span>
+        </a>
+      </div>
     </div>
-
+    
     <a href="" class="sb-db-menu__link">
       <img src="../assets/media/images/dashboard/company.svg" alt="" style='width: 24px;''>
       <span class="js-sidebar-check">Company intelligence</span>

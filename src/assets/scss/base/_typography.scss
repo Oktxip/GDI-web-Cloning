@@ -93,6 +93,7 @@
     letter-spacing: -.01rem
 }
 
+
 .text-dashboard__body--regular-semibold {
   font-family: Inter;
   font-style: normal;
@@ -101,10 +102,45 @@
   line-height: 1.5rem;
   letter-spacing: -.01rem;
 }
+.text-dashboard__body--regular-medium {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -.01rem;
+}
+
+.text-dashboard__body--regular {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -.01rem;
+}
+
 .text-dashboard__body--small-medium {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.45rem;
+  letter-spacing: -.01rem;
+}
+.text-dashboard__body--small {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.45rem;
+  letter-spacing: -.01rem;
+}
+
+.text-dashboard__body--small-semibold {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
   font-size: .875rem;
   line-height: 1.45rem;
   letter-spacing: -.01rem;
